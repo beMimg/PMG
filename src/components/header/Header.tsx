@@ -32,7 +32,9 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-transparent">
+      <nav
+        className={`w-full ${isMenuOpen && "bg-black"} bg-transparent transition-all`}
+      >
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 p-6 text-white md:justify-around">
           <div className="flex w-full flex-row items-center justify-between ">
             <div className="relative  flex w-full flex-row items-center gap-2">
@@ -61,7 +63,7 @@ const Header = () => {
           </div>
           {isMdScreen && isMenuOpen && (
             <div
-              className={`flex  flex-col items-center gap-4 overflow-hidden font-medium transition-all `}
+              className={`flex  flex-col items-center gap-4 overflow-hidden  font-medium transition-all `}
             >
               <NavLinks />
             </div>
