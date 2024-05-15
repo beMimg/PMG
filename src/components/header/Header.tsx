@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <header>
       <nav
-        className={`w-full ${isMenuOpen && "bg-black"} bg-transparent transition-all`}
+        className={`w-full ${isMdScreen && isMenuOpen ? "bg-black" : "bg-transparent"} transition-all`}
       >
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 p-6 text-white md:justify-around">
           <div className="flex w-full flex-row items-center justify-between ">
