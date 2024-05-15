@@ -6,12 +6,23 @@ import logo from "../../assets/logo.png";
 const Header = () => {
   const [isMdScreen, setIsMdScreen] = useState(Boolean);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Default value of the isTopOfPage will be true, the useEffect will take care of it when the component mounts.
+  // If the user is as the top of the page, this means window.scrollY === 0, the background of the header will be transparent and the text white
+  // If the window.scrollY > 0, this means the user is no longer at the top of the page, we change the background to white and the text to black
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
 
   function handleResize() {
     const mdMediaQuery = window.matchMedia("(max-width: 767px)");
     setIsMdScreen(mdMediaQuery.matches);
   }
 
+  function handleScroll() {
+    if (window.scrollY > 0) {
+      setIsTopOfPage(false);
+    } else {
+      setIsTopOfPage(true);
+    }
+  }
   useEffect(() => {
     // When the page refreshes we need to know the initial state of the width.
     // The Event Listener is not enough since will only be active when resize.
@@ -24,18 +35,22 @@ const Header = () => {
     }
 
     window.addEventListener("resize", handleResize);
-
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header>
-      <nav
-        className={`w-full ${isMdScreen && isMenuOpen ? "bg-black" : "bg-transparent"} transition-all`}
-      >
-        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 p-6 text-white md:justify-around">
+    // Check the isTopOfPage state comment to clarify.
+    // if isMdScreen and isMenuOpen  change the bg-white and text to black.
+    // isMdScreen condition will prevent to when a user changes the screen width, it will not be bg-white and text-black, instead it will be as it should for larger devices.
+    <header
+      className={` fixed z-50 w-full transition-all  ${isTopOfPage ? " bg-transparent text-white" : "bg-white text-black"} ${isMdScreen && isMenuOpen ? "bg-white text-black" : " bg-transparent text-white"}`}
+    >
+      <nav className={`w-full transition-all`}>
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 p-6  md:justify-around">
           <div className="flex w-full flex-row items-center justify-between ">
             <div className="relative  flex w-full flex-row items-center gap-2">
               <img
@@ -63,7 +78,7 @@ const Header = () => {
           </div>
           {isMdScreen && isMenuOpen && (
             <div
-              className={`flex  flex-col items-center gap-4 overflow-hidden  font-medium transition-all `}
+              className={`flex flex-col items-center gap-4 overflow-hidden font-medium`}
             >
               <NavLinks />
             </div>
