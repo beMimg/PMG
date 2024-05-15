@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo-background-color {
+  background-color: #00adb5;
+}
+
+.logo-border-color {
+  border: 2px;
+  border-color: #00adb5;
+}
