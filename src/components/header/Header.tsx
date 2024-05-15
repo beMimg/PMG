@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 import NavLinks from "./NavLinks";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [isMdScreen, setIsMdScreen] = useState(Boolean);
@@ -32,9 +33,21 @@ const Header = () => {
   return (
     <header>
       <nav className="bg-transparent">
-        <div className="mx-auto flex w-full max-w-7xl flex-col  items-center justify-between p-6 text-white md:justify-around">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 p-6 text-white md:justify-around">
           <div className="flex w-full flex-row items-center justify-between ">
-            <h1 className="text-2xl font-bold xl:text-3xl">PMG</h1>
+            <div className="relative  flex w-full flex-row items-center gap-2">
+              <img
+                src={logo}
+                alt="logo of the company PMG"
+                className=" h-[60px]"
+              />
+              <div className="absolute left-[80px] flex flex-col">
+                <h1 className="text-3xl font-bold">PMG</h1>
+                <h2 className="w-full text-xs md:text-xl ">
+                  Consulting & Development
+                </h2>
+              </div>
+            </div>
             {isMdScreen ? (
               <FiMenu
                 className={`text-2xl ${isMenuOpen ? "-rotate-90 transition-all" : "rotate-0 transition-all "}`}
