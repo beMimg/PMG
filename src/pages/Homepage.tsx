@@ -36,7 +36,7 @@ const Homepage = () => {
         <section className="flex flex-col gap-20 ">
           <div
             className="flex flex-col items-center gap-2  text-center uppercase"
-            role="content-info"
+            role="contentinfo"
             aria-labelledby="section-heading"
           >
             <p id="section-heading" className="sr-only">
