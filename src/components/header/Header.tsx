@@ -44,10 +44,8 @@ const Header = () => {
 
   return (
     // Check the isTopOfPage state comment to clarify.
-    // if isMdScreen and isMenuOpen  change the bg-white and text to black.
-    // isMdScreen condition will prevent to when a user changes the screen width, it will not be bg-white and text-black, instead it will be as it should for larger devices.
     <header
-      className={` fixed z-50 w-full transition-all  ${isTopOfPage ? " bg-transparent text-white" : "bg-white text-black"} ${isMdScreen && isMenuOpen ? "bg-white text-black" : " bg-transparent text-white"}`}
+      className={` fixed z-50 w-full transition-all ${(isMdScreen && !isTopOfPage) || (isMdScreen && isMenuOpen) || (!isTopOfPage && !isMdScreen) ? "bg-white text-black" : "bg-transparent text-white"} `}
     >
       <nav className={`w-full transition-all`}>
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 p-6  md:justify-around">
