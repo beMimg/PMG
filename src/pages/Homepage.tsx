@@ -98,7 +98,6 @@ const Homepage = () => {
             </p>
             <h1 className="text-4xl font-extrabold text-white">Confiados</h1>
           </div>
-          <h1></h1>
         </section>
       </main>
     </>
