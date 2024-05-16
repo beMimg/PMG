@@ -32,8 +32,8 @@ const Homepage = () => {
           </NavLink>
         </div>
       </section>
-      <main className="mx-auto max-w-7xl flex-col p-6">
-        <section className="flex flex-col gap-20 ">
+      <main className=" ">
+        <section className="mx-auto flex max-w-7xl flex-col gap-20  px-6 py-12 md:gap-32 ">
           <div
             className="flex flex-col items-center gap-2  text-center uppercase"
             role="contentinfo"
@@ -42,7 +42,7 @@ const Homepage = () => {
             <p id="section-heading" className="sr-only">
               Section heading: Que nos define
             </p>
-            <p className="text-xl " aria-hidden="true">
+            <p className="text-xl md:text-2xl" aria-hidden="true">
               Que
             </p>
             <p
@@ -83,6 +83,22 @@ const Homepage = () => {
               </p>
             </div>
           </div>
+        </section>
+        <section className="flex flex-col gap-20 bg-gradient-to-b from-cyan-800 to-teal-500 py-12 md:gap-32">
+          <div
+            className="flex flex-col items-center gap-2  text-center uppercase"
+            role="contentinfo"
+            aria-labelledby="section-heading-2"
+          >
+            <p className="sr-only" id="section-heading-2">
+              Section Heading 2: Somos confiados
+            </p>
+            <p className="text-xl text-white md:text-2xl" aria-hidden="true">
+              Somos
+            </p>
+            <h1 className="text-4xl font-extrabold text-white">Confiados</h1>
+          </div>
+          <h1></h1>
         </section>
       </main>
     </>
