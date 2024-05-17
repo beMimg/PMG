@@ -35,9 +35,9 @@ const ServiciosSection = () => {
               <li className=" list-disc">{tecnologia}</li>
             ))}
           </ul>
-          <div className="flex items-center justify-center md:pt-[60px]">
+          {/* <div className="flex items-center justify-center md:pt-[60px]">
             <CompleteLogo />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
