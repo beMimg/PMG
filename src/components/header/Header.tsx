@@ -59,7 +59,7 @@ const Header = () => {
               <div className="absolute left-[80px] flex flex-col">
                 <h1 className="text-3xl font-bold">PMG</h1>
                 <h2 className="w-full text-xs md:text-xl ">
-                  Consulting & Development
+                  Solutions & Development
                 </h2>
               </div>
             </div>

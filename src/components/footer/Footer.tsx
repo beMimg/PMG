@@ -3,7 +3,7 @@ import logo from "../../assets/complete-logo.png";
 
 const Footer = () => {
   return (
-    <footer className=" bg-slate-800 p-6 text-gray-400">
+    <footer className=" bg-slate-800 p-6 py-24 text-gray-400">
       <div className="mx-auto flex max-w-7xl  flex-col justify-between gap-12 md:flex-row md:items-center">
         <img src={logo} alt="PMG company" className="h-[200px] self-center" />
         <div>
