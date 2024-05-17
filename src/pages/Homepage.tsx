@@ -3,6 +3,7 @@ import meetingImg from "../assets/homepage-meeting.jpg";
 import { NavLink } from "react-router-dom";
 import QueNosDefineSection from "../components/homepage/QueNosDefineSection";
 import TestimoniosSection from "../components/homepage/TestimoniosSection";
+import ServiciosSection from "../components/homepage/ServiciosSection";
 
 const Homepage = () => {
   return (
@@ -36,6 +37,7 @@ const Homepage = () => {
       <main>
         <QueNosDefineSection />
         <TestimoniosSection />
+        <ServiciosSection />
       </main>
     </>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import LogoSquare from "../LogoSquare";
+import LogoSquare from "../logo/LogoSquare";
 
 const QueNosDefineSection = () => {
   return (
