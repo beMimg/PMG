@@ -4,19 +4,12 @@ import { NavLink } from "react-router-dom";
 import QueNosDefineSection from "../components/homepage/QueNosDefineSection";
 import TestimoniosSection from "../components/homepage/TestimoniosSection";
 import ServiciosSection from "../components/homepage/ServiciosSection";
+import TopSectionOfEveryRoute from "../components/TopSectionOfEveryRoute";
 
 const Homepage = () => {
   return (
     <>
-      <section className="mx-auto flex h-screen max-w-7xl flex-row items-center justify-between gap-6 px-6 pt-[110px]  text-white  md:gap-20">
-        <img
-          src={meetingImg}
-          alt="meeting"
-          className={`absolute left-0 top-0 -z-20 h-full w-full object-cover object-center`}
-          style={{
-            filter: "brightness(0.15)",
-          }}
-        />
+      <TopSectionOfEveryRoute image={meetingImg}>
         <span className="logo-background-color  h-[75%] w-[10px] rounded-md"></span>
         <div className="flex h-full flex-col justify-evenly ">
           <h2 className="  text-xl font-bold md:text-5xl ">
@@ -33,7 +26,7 @@ const Homepage = () => {
             Nuestros Servicios
           </NavLink>
         </div>
-      </section>
+      </TopSectionOfEveryRoute>
       <main>
         <QueNosDefineSection />
         <TestimoniosSection />

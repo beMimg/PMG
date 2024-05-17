@@ -1,16 +1,12 @@
 import React from "react";
 import meetingImg from "../assets/nosotros-meeting.jpg";
+import TopSectionOfEveryRoute from "../components/TopSectionOfEveryRoute";
 
 const Nosotros = () => {
   return (
-    <img
-      src={meetingImg}
-      alt=""
-      className={`absolute left-0 top-0 -z-10 h-screen w-full   object-cover object-center`}
-      style={{
-        filter: "brightness(0.2)",
-      }}
-    />
+    <TopSectionOfEveryRoute image={meetingImg}>
+      <p>Nosotros</p>
+    </TopSectionOfEveryRoute>
   );
 };
 
