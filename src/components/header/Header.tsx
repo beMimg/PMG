@@ -45,7 +45,7 @@ const Header = () => {
   return (
     // Check the isTopOfPage state comment to clarify.
     <header
-      className={` fixed z-50 w-full transition-all ${(isMdScreen && !isTopOfPage) || (isMdScreen && isMenuOpen) || (!isTopOfPage && !isMdScreen) ? "bg-white text-black" : "bg-transparent text-white"} `}
+      className={` fixed z-50 w-full transition-all ${(isMdScreen && !isTopOfPage) || (isMdScreen && isMenuOpen) || (!isTopOfPage && !isMdScreen) ? "border-b-2 border-teal-600 bg-white text-black" : "bg-transparent text-white"} `}
     >
       <nav className={`w-full transition-all`}>
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 p-6  md:justify-around">
