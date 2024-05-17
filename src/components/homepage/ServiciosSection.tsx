@@ -1,5 +1,4 @@
 import React from "react";
-import CompleteLogo from "../logo/CompleteLogo";
 
 const tecnologias = [
   "Análisis Avanzado/Ciencia de Datos",
