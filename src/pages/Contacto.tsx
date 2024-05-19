@@ -1,5 +1,5 @@
 import React from "react";
-import TopSectionOfEveryRoute from "../components/TopSectionOfEveryRoute";
+import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
 import meetingImg from "../assets/contacto-meeting.jpg";
 
 const Contacto = () => {

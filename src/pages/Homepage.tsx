@@ -4,13 +4,14 @@ import { NavLink } from "react-router-dom";
 import QueNosDefineSection from "../components/homepage/QueNosDefineSection";
 import TestimoniosSection from "../components/homepage/TestimoniosSection";
 import ServiciosSection from "../components/homepage/ServiciosSection";
-import TopSectionOfEveryRoute from "../components/TopSectionOfEveryRoute";
+import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
+import VerticalLine from "../components/common/VerticalLine";
 
 const Homepage = () => {
   return (
     <>
       <TopSectionOfEveryRoute image={meetingImg}>
-        <span className="logo-background-color  h-[75%] w-[10px] rounded-md"></span>
+        <VerticalLine />
         <div className="flex h-full flex-col justify-evenly ">
           <h2 className="  text-xl font-bold md:text-5xl ">
             Tu visión, nuestra misión: juntos, alcanzamos el éxito.

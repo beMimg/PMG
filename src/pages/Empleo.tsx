@@ -1,6 +1,6 @@
 import React from "react";
 import meetingImg from "../assets/empleo-meeting.jpg";
-import TopSectionOfEveryRoute from "../components/TopSectionOfEveryRoute";
+import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
 
 const Empleo = () => {
   return (
