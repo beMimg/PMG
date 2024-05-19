@@ -3,6 +3,7 @@ import meetingImg from "../assets/nosotros-meeting.jpg";
 import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
 import VerticalLine from "../components/common/VerticalLine";
 import PorquePMG from "../components/nosotros/PorquePMG";
+import NuestrosValores from "../components/nosotros/NuestrosValores";
 
 const Nosotros = () => {
   return (
@@ -24,6 +25,7 @@ const Nosotros = () => {
       </TopSectionOfEveryRoute>
       <main>
         <PorquePMG />
+        <NuestrosValores />
       </main>
     </>
   );
