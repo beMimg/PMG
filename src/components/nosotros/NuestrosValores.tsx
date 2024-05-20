@@ -1,7 +1,6 @@
 import React from "react";
 import HoverCard from "./HoverCard";
 import SectionMaxW7XL from "../common/SectionMaxW7XL";
-import CualEsNuestroNegocio from "./CualEsNuestroNegocio";
 
 const NuestrosValores = () => {
   return (
