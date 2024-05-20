@@ -1,5 +1,5 @@
 import React from "react";
-import meetingImg from "../assets/homepage-meeting.jpg";
+import meetingImg from "../assets/route-images/homepage-meeting.jpg";
 import { NavLink } from "react-router-dom";
 import QueNosDefineSection from "../components/homepage/QueNosDefineSection";
 import TestimoniosSection from "../components/homepage/TestimoniosSection";

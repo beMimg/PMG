@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 import NavLinks from "./NavLinks";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo/logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/complete-logo.png";
+import logo from "../../assets/logo/logo_pmg2-removebg-preview.png";
 
 const Footer = () => {
   return (
