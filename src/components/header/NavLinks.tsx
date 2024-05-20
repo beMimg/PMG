@@ -1,14 +1,32 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavLinks = () => {
+interface NavLinksProps {
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const NavLinks = ({ setIsMenuOpen }: NavLinksProps) => {
+  function handleClick() {
+    setIsMenuOpen(false);
+  }
+
   return (
     <>
-      <NavLink to="nosotros">Nosotros</NavLink>
-      <NavLink to="testimonios">Testimonios</NavLink>
-      <NavLink to="servicios">Servicios</NavLink>
-      <NavLink to="contacto">Contacto</NavLink>
-      <NavLink to="empleo">Empleo</NavLink>
+      <NavLink onClick={handleClick} to="nosotros">
+        Nosotros
+      </NavLink>
+      <NavLink onClick={handleClick} to="testimonios">
+        Testimonios
+      </NavLink>
+      <NavLink onClick={handleClick} to="servicios">
+        Servicios
+      </NavLink>
+      <NavLink onClick={handleClick} to="contacto">
+        Contacto
+      </NavLink>
+      <NavLink onClick={handleClick} to="empleo">
+        Empleo
+      </NavLink>
     </>
   );
 };

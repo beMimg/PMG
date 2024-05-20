@@ -71,7 +71,7 @@ const Header = () => {
               />
             ) : (
               <div className="flex flex-row gap-7 font-medium ">
-                <NavLinks />
+                <NavLinks setIsMenuOpen={setIsMenuOpen} />
               </div>
             )}
           </div>
@@ -79,7 +79,7 @@ const Header = () => {
             <div
               className={`flex flex-col items-center gap-4 overflow-hidden font-medium`}
             >
-              <NavLinks />
+              <NavLinks setIsMenuOpen={setIsMenuOpen} />
             </div>
           )}
         </div>
