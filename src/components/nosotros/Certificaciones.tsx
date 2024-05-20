@@ -1,11 +1,11 @@
 import React from "react";
 import SectionMaxW7XL from "../common/SectionMaxW7XL";
-import one from "../../assets/certifications/netweaver.png";
-import two from "../../assets/certifications/btp-extension.png";
-import three from "../../assets/certifications/certified-associate.png";
-import four from "../../assets/certifications/certified-specialist.png";
-import five from "../../assets/certifications/development-associate.png";
-import six from "../../assets/certifications/sap-cloud.png";
+import netWeaverImg from "../../assets/certifications/abap-with-sap-netweaver.png";
+import btpExtensionImg from "../../assets/certifications/sap-btp-extension-developer.png";
+import abapForSapImg from "../../assets/certifications/abap-for-sap-hana-2.0.png";
+import sapCloudImg from "../../assets/certifications/sap-cloud-platform.png";
+import sapFioriAppImg from "../../assets/certifications/sap-fiori-app-developer.png";
+import systemAdministrationImg from "../../assets/certifications/sap-s4hana-system-administration.png";
 
 const Certificaciones = () => {
   const imageStyle = "rounded-md border border-blue-500 max-h-[150px]";
@@ -35,12 +35,36 @@ const Certificaciones = () => {
             </p>
           </div>
           <aside className=" grid h-full grid-cols-2 gap-6 place-self-center md:grid-cols-3 lg:items-center">
-            <img src={one} alt="" className={imageStyle} />
-            <img src={two} alt="" className={imageStyle} />
-            <img src={three} alt="" className={imageStyle} />
-            <img src={four} alt="" className={imageStyle} />
-            <img src={five} alt="" className={imageStyle} />
-            <img src={six} alt="" className={imageStyle} />
+            <img
+              src={abapForSapImg}
+              alt="Abap For SAP HANA 2.0 - Certified Specialist"
+              className={imageStyle}
+            />
+            <img
+              src={sapFioriAppImg}
+              alt="Sap Fiori Application Developer - Certified Development Associate"
+              className={imageStyle}
+            />
+            <img
+              src={systemAdministrationImg}
+              alt="SAP S/4HANA System Administration - Certified Associate"
+              className={imageStyle}
+            />
+            <img
+              src={btpExtensionImg}
+              alt="SAP BTP Extension Developer - Certified Development Associate"
+              className={imageStyle}
+            />
+            <img
+              src={sapCloudImg}
+              alt="SAP Cloud Platform 1.1 - Certified Associate"
+              className={imageStyle}
+            />
+            <img
+              src={netWeaverImg}
+              alt="ABAP with SAP NetWeaver 7.50"
+              className={imageStyle}
+            />
           </aside>
         </div>
       </SectionMaxW7XL>
