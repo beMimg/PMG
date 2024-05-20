@@ -1,9 +1,10 @@
 import React from "react";
 import HoverCard from "./HoverCard";
+import SectionMaxW7XL from "../common/SectionMaxW7XL";
 
 const NuestrosValores = () => {
   return (
-    <section className="mx-auto flex max-w-7xl flex-col justify-between gap-14 px-6 py-12 md:gap-24">
+    <SectionMaxW7XL>
       <h1 className="text-center text-4xl font-bold text-black">
         Nuestros Valores
       </h1>
@@ -25,7 +26,7 @@ const NuestrosValores = () => {
           description="Nuestra filosofía es ganar-ganar, comprometidos en todo momento."
         />
       </div>
-    </section>
+    </SectionMaxW7XL>
   );
 };
 

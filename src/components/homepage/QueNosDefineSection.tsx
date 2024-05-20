@@ -1,9 +1,10 @@
 import React from "react";
 import LogoSquare from "../logo/LogoSquare";
+import SectionMaxW7XL from "../common/SectionMaxW7XL";
 
 const QueNosDefineSection = () => {
   return (
-    <section className="mx-auto flex max-w-7xl flex-col gap-20  px-6 py-12 md:gap-32 ">
+    <SectionMaxW7XL>
       <div
         className="flex flex-col items-center gap-2  text-center uppercase"
         role="contentinfo"
@@ -52,7 +53,7 @@ const QueNosDefineSection = () => {
           </p>
         </div>
       </div>
-    </section>
+    </SectionMaxW7XL>
   );
 };
 

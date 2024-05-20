@@ -4,6 +4,8 @@ import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute"
 import VerticalLine from "../components/common/VerticalLine";
 import PorquePMG from "../components/nosotros/PorquePMG";
 import NuestrosValores from "../components/nosotros/NuestrosValores";
+import Certificaciones from "../components/nosotros/Certificaciones";
+import Main from "../components/common/Main";
 
 const Nosotros = () => {
   return (
@@ -13,20 +15,22 @@ const Nosotros = () => {
         <div className="flex h-full flex-col justify-evenly ">
           <h2 className="  text-xl font-bold md:text-5xl ">Sobre Nosotros </h2>
           <h2 className="text-lg font-semibold opacity-90   md:text-2xl md:opacity-70">
-            En PMG, nos dedicamos a ofrecer soluciones de desarrollo y
-            consultoría de TI de clase mundial. Junto con nuestras afiliadas,
-            proporcionamos servicios innovadores y personalizados a algunas de
-            las marcas más reconocidas a nivel global. Nuestro equipo de
-            expertos combina talento, experiencia y tecnología avanzada para
-            impulsar el éxito de nuestros clientes, ayudándoles a superar
-            desafíos y alcanzar sus objetivos estratégicos.
+            En Julio de 2023, nace PMG Solutions & Development, con el objetivo
+            de proporcionar una solución ajustada a las necesidades de cada
+            cliente en todas las áreas tecnológicas de SAP. Nuestro modelo de
+            negocio se basa en la experiencia y la confianza de nuestros
+            clientes. Proporcionando un servicio que va más allá del producto,
+            buscando la adaptación concreta a las necesidades del cliente y
+            priorizando su bienestar durante todo el ciclo de vida de los
+            proyectos.
           </h2>
         </div>
       </TopSectionOfEveryRoute>
-      <main>
+      <Main>
         <PorquePMG />
         <NuestrosValores />
-      </main>
+        <Certificaciones />
+      </Main>
     </>
   );
 };

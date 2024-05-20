@@ -1,4 +1,5 @@
 import React from "react";
+import SectionMaxW7XL from "../common/SectionMaxW7XL";
 
 const tecnologias = [
   "Análisis Avanzado/Ciencia de Datos",
@@ -18,7 +19,7 @@ const tecnologias = [
 
 const ServiciosSection = () => {
   return (
-    <section className="relative mx-auto flex max-w-7xl flex-col items-center  gap-20 px-6 py-12">
+    <SectionMaxW7XL>
       <h1 className="logo-text-color text-center text-4xl font-extrabold uppercase">
         SERVICIOS
       </h1>
@@ -39,7 +40,7 @@ const ServiciosSection = () => {
           </div> */}
         </div>
       </div>
-    </section>
+    </SectionMaxW7XL>
   );
 };
 

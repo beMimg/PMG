@@ -6,6 +6,7 @@ import TestimoniosSection from "../components/homepage/TestimoniosSection";
 import ServiciosSection from "../components/homepage/ServiciosSection";
 import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
 import VerticalLine from "../components/common/VerticalLine";
+import Main from "../components/common/Main";
 
 const Homepage = () => {
   return (
@@ -28,11 +29,11 @@ const Homepage = () => {
           </NavLink>
         </div>
       </TopSectionOfEveryRoute>
-      <main>
+      <Main>
         <QueNosDefineSection />
         <TestimoniosSection />
         <ServiciosSection />
-      </main>
+      </Main>
     </>
   );
 };
