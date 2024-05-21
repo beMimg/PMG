@@ -6,7 +6,6 @@ import PorquePMG from "../components/nosotros/PorquePMG";
 import NuestrosValores from "../components/nosotros/NuestrosValores";
 import Certificaciones from "../components/nosotros/Certificaciones";
 import Main from "../components/common/Main";
-import CualEsNuestroNegocio from "../components/nosotros/CualEsNuestroNegocio";
 import AreaGeografica from "../components/nosotros/AreaGeografica";
 
 const Nosotros = () => {
@@ -30,7 +29,6 @@ const Nosotros = () => {
       </TopSectionOfEveryRoute>
       <Main>
         <PorquePMG />
-        <CualEsNuestroNegocio />
         <NuestrosValores />
         <Certificaciones />
         <AreaGeografica />

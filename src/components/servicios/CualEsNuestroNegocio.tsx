@@ -1,7 +1,7 @@
 import React from "react";
 import SectionMaxW7XL from "../common/SectionMaxW7XL";
 
-const negocios = [
+export const negocios = [
   {
     title: "ABAP",
     description:
@@ -44,7 +44,7 @@ const CualEsNuestroNegocio = () => {
       <SectionMaxW7XL>
         <div className="flex flex-col gap-12">
           <h1 className=" text-4xl font-bold text-black">
-            ¿Cúal es nuestro negocio?
+            Expecialistas en SAP
           </h1>
           <div className="grid gap-24 text-center md:grid-cols-3">
             {negocios.map((negocio) => (
