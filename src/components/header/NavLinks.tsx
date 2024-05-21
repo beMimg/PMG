@@ -15,9 +15,7 @@ const NavLinks = ({ setIsMenuOpen }: NavLinksProps) => {
       <NavLink onClick={handleClick} to="nosotros">
         Nosotros
       </NavLink>
-      <NavLink onClick={handleClick} to="testimonios">
-        Testimonios
-      </NavLink>
+
       <NavLink onClick={handleClick} to="servicios">
         Servicios
       </NavLink>
