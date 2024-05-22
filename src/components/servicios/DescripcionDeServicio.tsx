@@ -33,7 +33,7 @@ const DescripcionDeServicio = ({
     <section className="flex flex-col gap-16">
       {/* Horizontal Bar */}
       <div
-        className={`flex h-[160px] w-[95%] flex-row items-center gap-4 p-6 md:h-[200px] md:w-[70%]  md:gap-0 ${direction === "right" ? "rounded-r-full" : "self-end rounded-l-full"} ${cssColor}`}
+        className={`flex h-[160px] w-[95%] flex-row items-center gap-4 p-6 transition-all md:h-[200px] md:w-[70%] md:gap-0  md:hover:w-[72%] ${direction === "right" ? "rounded-r-full" : "self-end rounded-l-full"} ${cssColor}`}
       >
         {direction === "right" ? (
           <>
