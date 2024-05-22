@@ -1,5 +1,9 @@
 import React from "react";
-import SectionMaxW7XL from "../common/SectionMaxW7XL";
+import DescripcionDeServicio from "../DescripcionDeServicio";
+import SectionMaxW7XL from "../../common/SectionMaxW7XL";
+import especialistaSapImg from "../../../assets/route-images/testimonios-meeting.jpg";
+import MetodologiasDeTrabajo from "./MetodologiasDeTrabajo";
+import PorqueEligirnos from "./PorqueEligirnos";
 
 export const negocios = [
   {
@@ -34,30 +38,32 @@ export const negocios = [
   },
 ];
 
-const CualEsNuestroNegocio = () => {
+const ServicioSAP = () => {
   return (
-    <div className="relative py-12">
-      <div
-        style={{ backgroundColor: "#f0f0f0" }}
-        className="absolute left-0 top-0 -z-20 h-full w-full"
-      ></div>
+    <DescripcionDeServicio
+      direction="right"
+      title="Especialistas en SAP"
+      color="rose"
+      image={especialistaSapImg}
+    >
       <SectionMaxW7XL>
-        <div className="flex flex-col gap-12">
-          <h1 className=" text-4xl font-bold text-black">
-            Expecialistas en SAP
-          </h1>
-          <div className="grid gap-24 text-center md:grid-cols-3">
+        <div className="flex flex-col gap-24">
+          <div className=" grid  gap-16  text-center md:grid-cols-3">
             {negocios.map((negocio) => (
-              <div>
-                <h2 className="font-semibold">{negocio.title}</h2>
-                <p>{negocio.description}</p>
+              <div className="blurred-bg relative rounded-lg transition-all duration-200 ease-in-out ">
+                <div className="flex h-full w-full flex-col gap-2 rounded-lg bg-gray-50 p-4 shadow-lg transition-all hover:scale-95 hover:shadow-none">
+                  <h2 className="text-xl font-semibold">{negocio.title}</h2>
+                  <p className="text-lg">{negocio.description}</p>
+                </div>
               </div>
             ))}
           </div>
+          <PorqueEligirnos />
+          <MetodologiasDeTrabajo />
         </div>
       </SectionMaxW7XL>
-    </div>
+    </DescripcionDeServicio>
   );
 };
 
-export default CualEsNuestroNegocio;
+export default ServicioSAP;

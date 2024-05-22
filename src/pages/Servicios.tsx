@@ -9,8 +9,8 @@ import sapBtpLogo from "../assets/techstack/sap/sap-btp.png";
 import sapCloudLogo from "../assets/techstack/sap/sap-cloud.jpg";
 import sapFioriLogo from "../assets/techstack/sap/sap-fiori.png";
 import sapHanaLogo from "../assets/techstack/sap/sap-hana.webp";
-import ServicioDesarrollo from "../components/servicios/ServicioDesarrollo";
-import ServicioSAP from "../components/servicios/ServicioSAP";
+import ServicioDesarrollo from "../components/servicios/Desarrollo/ServicioDesarrollo";
+import ServicioSAP from "../components/servicios/SAP/ServicioSAP";
 
 const sapLogos = [
   { alt: "SAP Abap logo", image: sapAbapLogo },

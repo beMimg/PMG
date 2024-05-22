@@ -66,3 +66,67 @@
 .metodologias-bg:hover::before {
   opacity: 1;
 }
+
+.desarrollo-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(163deg, #0080ff 0%, #22019a 100%);
+  filter: blur(15px); /* Adjust the blur radius as needed */
+  z-index: -1;
+  border-radius: inherit; /* Maintain the border-radius of the parent */
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+  transition: all 200ms ease-in-out;
+}
+
+.desarrollo-bg:hover::before {
+  opacity: 1;
+}
+
+.two-sides-card {
+  width: 100%;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.two-sides-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+
+.two-sides-card:hover .two-sides-card-inner {
+  transform: rotateY(180deg);
+}
+
+.two-sides-card-front,
+.two-sides-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.two-sides-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(0deg);
+}
+
+.two-sides-card-back {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import jiraLogo from "../../assets/metodologias/JIRA-logo.png";
-import otrsLogo from "../../assets/metodologias/OTRS-logo.png";
-import serviceNowLogo from "../../assets/metodologias/ServiceNow-logo.png";
-import trelloLogo from "../../assets/metodologias/Trello-logo.png";
+import jiraLogo from "../../../assets/metodologias/JIRA-logo.png";
+import otrsLogo from "../../../assets/metodologias/OTRS-logo.png";
+import serviceNowLogo from "../../../assets/metodologias/ServiceNow-logo.png";
+import trelloLogo from "../../../assets/metodologias/Trello-logo.png";
 
 const MetodologiasDeTrabajo = () => {
   return (
