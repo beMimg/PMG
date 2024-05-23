@@ -7,6 +7,8 @@ import ServiciosSection from "../components/homepage/ServiciosSection";
 import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
 import VerticalLine from "../components/common/VerticalLine";
 import Main from "../components/common/Main";
+import PorqueEligirnos from "../components/servicios/SAP/PorqueEligirnosSection";
+import SectionMaxW7XL from "../components/common/SectionMaxW7XL";
 
 const Homepage = () => {
   return (
@@ -32,7 +34,9 @@ const Homepage = () => {
       <Main>
         <QueNosDefineSection />
         <TestimoniosSection />
-        <ServiciosSection />
+        <SectionMaxW7XL>
+          <PorqueEligirnos />
+        </SectionMaxW7XL>
       </Main>
     </>
   );

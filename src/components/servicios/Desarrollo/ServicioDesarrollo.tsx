@@ -1,5 +1,5 @@
 import React from "react";
-import DescripcionDeServicio from "../DescripcionDeServicio";
+import DescripcionDeServicio from "../TipoDeServicioSection";
 import SectionMaxW7XL from "../../common/SectionMaxW7XL";
 import desarrolloWebImg from "../../../assets/desarrollo-web.jpg";
 import DesarrolloPersonalizado from "./DesarrolloPersonalizado";

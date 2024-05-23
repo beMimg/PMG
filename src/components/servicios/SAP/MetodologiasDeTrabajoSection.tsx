@@ -4,9 +4,9 @@ import otrsLogo from "../../../assets/metodologias/OTRS-logo.png";
 import serviceNowLogo from "../../../assets/metodologias/ServiceNow-logo.png";
 import trelloLogo from "../../../assets/metodologias/Trello-logo.png";
 
-const MetodologiasDeTrabajo = () => {
+const MetodologiasDeTrabajoSection = () => {
   return (
-    <div className="metodologias-bg group  relative flex flex-col justify-between gap-12 rounded-lg bg-gray-50 p-8 shadow-lg transition-all md:flex-row ">
+    <section className="metodologias-bg group  relative flex flex-col justify-between gap-12 rounded-lg bg-gray-50 p-8 shadow-lg transition-all md:flex-row ">
       <div className="flex max-w-[700px] flex-col gap-10 transition-transform duration-200 ease-in-out group-hover:translate-x-5 md:justify-between md:gap-0">
         <h1 className="text-4xl font-bold">Metodologías de trabajo</h1>
         <p className="text-wrap text-xl">
@@ -41,8 +41,8 @@ const MetodologiasDeTrabajo = () => {
           className="w-[100px] md:min-w-[200px] md:max-w-[200px] "
         />
       </div>
-    </div>
+    </section>
   );
 };
 
-export default MetodologiasDeTrabajo;
+export default MetodologiasDeTrabajoSection;

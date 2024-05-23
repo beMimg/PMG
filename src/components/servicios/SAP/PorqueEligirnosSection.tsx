@@ -18,9 +18,9 @@ const sapLogos = [
   { alt: "SAP Hana Logo", image: sapHanaLogo },
 ];
 
-const PorqueEligirnos = () => {
+const PorqueEligirnosSection = () => {
   return (
-    <div className="metodologias-bg group  relative flex flex-col justify-between gap-8 rounded-lg bg-gray-50 p-8 shadow-lg transition-all md:flex-col md:gap-12">
+    <section className="metodologias-bg group  relative flex flex-col justify-between gap-8 rounded-lg bg-gray-50 p-8 shadow-lg transition-all md:flex-col md:gap-12">
       <div className="flex flex-row  justify-between  ">
         <h1 className="text-4xl font-bold">¿Por qué elegirnos?</h1>
         <img
@@ -63,8 +63,8 @@ const PorqueEligirnos = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default PorqueEligirnos;
+export default PorqueEligirnosSection;
