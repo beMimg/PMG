@@ -1,8 +1,9 @@
 import React from "react";
+import SectionMaxW7XL from "../../common/SectionMaxW7XL";
 
-const DesarrolloPersonalizado = () => {
+const DesarrolloPersonalizadoSection = () => {
   return (
-    <div className="desarrollo-bg   relative flex flex-col justify-between gap-12 rounded-lg bg-gray-50 p-8 shadow-lg transition-all md:flex-row ">
+    <SectionMaxW7XL colored={true} bgHoverColor="theme">
       <div className="flex flex-col gap-8">
         <h1 className="text-4xl font-bold">Desarrollo Personalizado</h1>
         <div className="text-lg">
@@ -45,8 +46,8 @@ const DesarrolloPersonalizado = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </SectionMaxW7XL>
   );
 };
 
-export default DesarrolloPersonalizado;
+export default DesarrolloPersonalizadoSection;

@@ -28,10 +28,18 @@ const Nosotros = () => {
         </div>
       </TopSectionOfEveryRoute>
       <Main>
-        <PorquePMG />
-        <NuestrosValores />
-        <Certificaciones />
-        <AreaGeografica />
+        <div className="px-6">
+          <PorquePMG />
+        </div>
+        <div className="px-6">
+          <NuestrosValores />
+        </div>
+        <div className="px-6">
+          <Certificaciones />
+        </div>
+        <div className="px-6">
+          <AreaGeografica />
+        </div>
       </Main>
     </>
   );

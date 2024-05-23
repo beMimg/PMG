@@ -4,9 +4,9 @@ import SectionMaxW7XL from "../common/SectionMaxW7XL";
 
 const QueNosDefineSection = () => {
   return (
-    <SectionMaxW7XL>
+    <SectionMaxW7XL colored={true} bgHoverColor="theme">
       <div
-        className="flex flex-col items-center gap-2  text-center uppercase"
+        className="flex flex-col items-center gap-2  text-center uppercase "
         role="contentinfo"
         aria-labelledby="section-heading"
       >

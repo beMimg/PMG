@@ -1,6 +1,6 @@
 import React from "react";
 
-interface DescripcionDeServicioProps {
+interface TipoDeServicioSectionProps {
   direction: "right" | "left";
   title: string;
   image: string;
@@ -8,13 +8,13 @@ interface DescripcionDeServicioProps {
   color: "rose" | "blue" | "purple";
 }
 
-const DescripcionDeServicio = ({
+const TipoDeServicioSection = ({
   direction,
   title,
   image,
   children,
   color,
-}: DescripcionDeServicioProps) => {
+}: TipoDeServicioSectionProps) => {
   const imgStyle =
     " h-[115px] w-[115px] self-center rounded-full object-cover object-center md:h-[160px] md:w-[160px]";
 
@@ -53,4 +53,4 @@ const DescripcionDeServicio = ({
   );
 };
 
-export default DescripcionDeServicio;
+export default TipoDeServicioSection;
