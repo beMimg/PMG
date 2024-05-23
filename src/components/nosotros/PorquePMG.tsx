@@ -6,9 +6,9 @@ const PorquePMG = () => {
   return (
     <SectionMaxW7XL colored={true} bgHoverColor="theme">
       <div className="flex flex-col justify-between gap-14 md:flex-row md:gap-32">
-        <div className="flex flex-col justify-around gap-4 lg:gap-0">
+        <div className="flex flex-col justify-around gap-4 lg:gap-8">
           <h1 className="text-4xl font-bold text-black ">¿Por qué PMG?</h1>
-          <p>
+          <p className="text-lg">
             En PMG, combinamos <strong>innovación tecnológica</strong> con una{" "}
             <strong>profunda experiencia</strong> en el sector para ofrecer{" "}
             <strong>soluciones personalizadas</strong> que se adaptan a las

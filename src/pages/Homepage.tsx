@@ -7,6 +7,7 @@ import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute"
 import VerticalLine from "../components/common/VerticalLine";
 import Main from "../components/common/Main";
 import PorqueEligirnosSection from "../components/servicios/SAP/PorqueEligirnosSection";
+import DivMaxW7XL from "../components/common/DivMaxW7XL";
 
 const Homepage = () => {
   return (
@@ -30,13 +31,13 @@ const Homepage = () => {
         </div>
       </TopSectionOfEveryRoute>
       <Main>
-        <div className="px-6">
+        <DivMaxW7XL>
           <QueNosDefineSection />
-        </div>
+        </DivMaxW7XL>
         <TestimoniosSection />
-        <div className="px-6">
+        <DivMaxW7XL>
           <PorqueEligirnosSection />
-        </div>
+        </DivMaxW7XL>
       </Main>
     </>
   );

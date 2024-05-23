@@ -8,7 +8,8 @@ import sapFioriAppImg from "../../assets/certifications/sap-fiori-app-developer.
 import systemAdministrationImg from "../../assets/certifications/sap-s4hana-system-administration.png";
 
 const Certificaciones = () => {
-  const imageStyle = "rounded-md border border-blue-500 max-h-[150px]";
+  const imageStyle =
+    "rounded-md border border-blue-500 max-h-[150px] hover:-translate-y-2 transition-all";
 
   return (
     // <div className="relative py-12">

@@ -7,6 +7,7 @@ import NuestrosValores from "../components/nosotros/NuestrosValores";
 import Certificaciones from "../components/nosotros/Certificaciones";
 import Main from "../components/common/Main";
 import AreaGeografica from "../components/nosotros/AreaGeografica";
+import DivMaxW7XL from "../components/common/DivMaxW7XL";
 
 const Nosotros = () => {
   return (
@@ -28,18 +29,12 @@ const Nosotros = () => {
         </div>
       </TopSectionOfEveryRoute>
       <Main>
-        <div className="px-6">
+        <DivMaxW7XL>
           <PorquePMG />
-        </div>
-        <div className="px-6">
           <NuestrosValores />
-        </div>
-        <div className="px-6">
           <Certificaciones />
-        </div>
-        <div className="px-6">
           <AreaGeografica />
-        </div>
+        </DivMaxW7XL>
       </Main>
     </>
   );
