@@ -1,6 +1,6 @@
 import React from "react";
 import TipoDeServicioSection from "../TipoDeServicioSection";
-import especialistaSapImg from "../../../assets/route-images/testimonios-meeting.jpg";
+import especialistaSapImg from "../../../assets/route-images/hands-together-photo.jpg";
 import MetodologiasDeTrabajoSection from "./MetodologiasDeTrabajoSection";
 import PorqueEligirnosSection from "./PorqueEligirnosSection";
 import NegocioSAPSection from "./NegocioSAPSection";
