@@ -12,6 +12,7 @@ import mongoDB from "../../../assets/techstack/development/mongodb.svg";
 import cSharpLogo from "../../../assets/techstack/development/c-sharp-svgrepo-com.svg";
 import awsLogo from "../../../assets/techstack/development/aws-svgrepo-com.svg";
 import TwoSidesCard from "../../common/TwoSidesCard";
+import SectionMaxW7XL from "../../common/SectionMaxW7XL";
 
 const techStackLogos = [
   { title: "JavaScript", image: javascript },
@@ -30,7 +31,7 @@ const techStackLogos = [
 
 const TechStackSection = () => {
   return (
-    <section className="desarrollo-bg   relative flex flex-col justify-between gap-12 rounded-lg bg-gray-50 p-8 shadow-lg transition-all md:flex-row ">
+    <SectionMaxW7XL colored={true} bgHoverColor="theme">
       <div className="flex w-full flex-col gap-8">
         <h1 className="text-4xl font-bold">Algunas de nuetras tecnologias</h1>
         <div className="grid grid-cols-3 place-items-center gap-6 md:grid-cols-6">
@@ -39,7 +40,7 @@ const TechStackSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </SectionMaxW7XL>
   );
 };
 

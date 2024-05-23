@@ -8,6 +8,7 @@ import sapHanaLogo from "../../../assets/techstack/sap/sap-hana.webp";
 import sapLogo from "../../../assets/techstack/sap/SAP_2011_logo.svg.png";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import SectionMaxW7XL from "../../common/SectionMaxW7XL";
 
 const sapLogos = [
   { alt: "SAP Abap logo", image: sapAbapLogo },
@@ -20,7 +21,7 @@ const sapLogos = [
 
 const PorqueEligirnosSection = () => {
   return (
-    <section className="metodologias-bg group  relative flex flex-col justify-between gap-8 rounded-lg bg-gray-50 p-8 shadow-lg transition-all md:flex-col md:gap-12">
+    <SectionMaxW7XL colored={true} bgHoverColor="rose">
       <div className="flex flex-row  justify-between  ">
         <h1 className="text-4xl font-bold">¿Por qué elegirnos?</h1>
         <img
@@ -63,7 +64,7 @@ const PorqueEligirnosSection = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </SectionMaxW7XL>
   );
 };
 

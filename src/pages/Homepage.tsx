@@ -3,12 +3,10 @@ import meetingImg from "../assets/route-images/homepage-meeting.jpg";
 import { NavLink } from "react-router-dom";
 import QueNosDefineSection from "../components/homepage/QueNosDefineSection";
 import TestimoniosSection from "../components/homepage/TestimoniosSection";
-import ServiciosSection from "../components/homepage/ServiciosSection";
 import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
 import VerticalLine from "../components/common/VerticalLine";
 import Main from "../components/common/Main";
-import PorqueEligirnos from "../components/servicios/SAP/PorqueEligirnosSection";
-import SectionMaxW7XL from "../components/common/SectionMaxW7XL";
+import PorqueEligirnosSection from "../components/servicios/SAP/PorqueEligirnosSection";
 
 const Homepage = () => {
   return (
@@ -32,11 +30,13 @@ const Homepage = () => {
         </div>
       </TopSectionOfEveryRoute>
       <Main>
-        <QueNosDefineSection />
+        <div className="px-6">
+          <QueNosDefineSection />
+        </div>
         <TestimoniosSection />
-        <SectionMaxW7XL>
-          <PorqueEligirnos />
-        </SectionMaxW7XL>
+        <div className="px-6">
+          <PorqueEligirnosSection />
+        </div>
       </Main>
     </>
   );

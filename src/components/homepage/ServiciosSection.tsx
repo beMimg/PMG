@@ -19,7 +19,7 @@ const tecnologias = [
 
 const ServiciosSection = () => {
   return (
-    <SectionMaxW7XL>
+    <SectionMaxW7XL colored={false} bgHoverColor="rose">
       <h1 className="logo-text-color text-center text-4xl font-extrabold uppercase">
         SERVICIOS
       </h1>

@@ -4,11 +4,11 @@ import SectionMaxW7XL from "../common/SectionMaxW7XL";
 
 const NuestrosValores = () => {
   return (
-    <SectionMaxW7XL>
+    <SectionMaxW7XL colored={true} bgHoverColor="rose">
       <h1 className="text-center text-4xl font-bold text-black">
         Nuestros Valores
       </h1>
-      <div className="grid grid-cols-2 flex-row place-items-center  justify-between gap-4 md:flex">
+      <div className="grid grid-cols-2 place-items-center justify-between  gap-4 md:flex md:flex-row">
         <HoverCard
           description="Somos un equipo de apoyo, dentro y fuera."
           title="solidaridad"

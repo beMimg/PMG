@@ -3,7 +3,7 @@ import SectionMaxW7XL from "../common/SectionMaxW7XL";
 
 const AreaGeografica = () => {
   return (
-    <SectionMaxW7XL>
+    <SectionMaxW7XL colored={true} bgHoverColor="rose">
       <h1 className="text-4xl font-extrabold ">Área geográfica de PMG</h1>
       <div className="flex flex-row justify-between">
         <img src="" alt="mapa" />

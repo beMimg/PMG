@@ -44,7 +44,7 @@
   opacity: 1;
 }
 
-.metodologias-bg::before {
+.rose-bg-hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -63,18 +63,18 @@
   transition: all 200ms ease-in-out;
 }
 
-.metodologias-bg:hover::before {
+.rose-bg-hover:hover::before {
   opacity: 1;
 }
 
-.desarrollo-bg::before {
+.theme-bg-hover::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(163deg, #0080ff 0%, #22019a 100%);
+  background: linear-gradient(163deg, #02d5e0 0%, #22019a 100%);
   filter: blur(15px); /* Adjust the blur radius as needed */
   z-index: -1;
   border-radius: inherit; /* Maintain the border-radius of the parent */
@@ -86,7 +86,7 @@
   transition: all 200ms ease-in-out;
 }
 
-.desarrollo-bg:hover::before {
+.theme-bg-hover:hover::before {
   opacity: 1;
 }
 
