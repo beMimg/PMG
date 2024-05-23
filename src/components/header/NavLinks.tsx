@@ -10,19 +10,20 @@ const NavLinks = ({ setIsMenuOpen }: NavLinksProps) => {
     setIsMenuOpen(false);
   }
 
+  const navLinkStyle = "transition-all hover:-translate-y-1";
   return (
     <>
-      <NavLink onClick={handleClick} to="nosotros">
+      <NavLink onClick={handleClick} to="nosotros" className={navLinkStyle}>
         Nosotros
       </NavLink>
 
-      <NavLink onClick={handleClick} to="servicios">
+      <NavLink onClick={handleClick} className={navLinkStyle} to="servicios">
         Servicios
       </NavLink>
-      <NavLink onClick={handleClick} to="contacto">
+      <NavLink onClick={handleClick} className={navLinkStyle} to="contacto">
         Contacto
       </NavLink>
-      <NavLink onClick={handleClick} to="empleo">
+      <NavLink onClick={handleClick} className={navLinkStyle} to="empleo">
         Empleo
       </NavLink>
     </>
