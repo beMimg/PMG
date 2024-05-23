@@ -1,9 +1,9 @@
 import React from "react";
 import DescripcionDeServicio from "../TipoDeServicioSection";
-import SectionMaxW7XL from "../../common/SectionMaxW7XL";
 import desarrolloWebImg from "../../../assets/desarrollo-web.jpg";
-import DesarrolloPersonalizado from "./DesarrolloPersonalizado";
-import TechStack from "./TechStack";
+import DesarrolloPersonalizadoSection from "./DesarrolloPersonalizadoSection";
+import TechStackSection from "./TechStackSection";
+import DivMaxW7XL from "../../common/DivMaxW7XL";
 
 const ServicioDesarrollo = () => {
   return (
@@ -13,10 +13,10 @@ const ServicioDesarrollo = () => {
       direction="left"
       image={desarrolloWebImg}
     >
-      <SectionMaxW7XL>
-        <DesarrolloPersonalizado />
-        <TechStack />
-      </SectionMaxW7XL>
+      <DivMaxW7XL>
+        <DesarrolloPersonalizadoSection />
+        <TechStackSection />
+      </DivMaxW7XL>
     </DescripcionDeServicio>
   );
 };
