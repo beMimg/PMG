@@ -26,8 +26,8 @@ const QueNosDefineSection = () => {
           ACELERACIÓN DEL CRECIMIENTO DIGITAL
         </h1>
       </div>
-      <div className="flex flex-col gap-20 md:grid md:grid-cols-3">
-        <div className="flex flex-col items-center justify-start gap-14">
+      <div className="flex flex-col gap-20 text-lg md:grid md:grid-cols-3">
+        <div className="flex flex-col items-center justify-start gap-14 ">
           <LogoSquare size="160px" title="Maestría en Tecnología" />
           <p className="text-center">
             En PMG Solutions and Development, somos expertos en tecnología y

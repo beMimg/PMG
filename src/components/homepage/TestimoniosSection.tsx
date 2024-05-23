@@ -1,62 +1,100 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import aurenLogo from "../../assets/testimonios/auren-logo.png";
 import plexusLogo from "../../assets/testimonios/plexus-logo.png";
 import globalviaLogo from "../../assets/testimonios/globalvia-logo.png";
 import unisysLogo from "../../assets/testimonios/unisys-logo.png";
 import metroLogo from "../../assets/testimonios/metro-logo.png";
 import g3Logo from "../../assets/testimonios/g3-logo.png";
+import { MdArrowLeft } from "react-icons/md";
+import { MdArrowRight } from "react-icons/md";
+import dishashopLogo from "../../assets/testimonios/disashop-logo.png";
+import mapfreLogo from "../../assets/testimonios/mapfre-logo.svg.png";
+import santanderLogo from "../../assets/testimonios/santander-logo.png";
 
 const TestimoniosSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const logos = [
+    { src: aurenLogo, alt: "Auren company" },
+    { src: plexusLogo, alt: "Plexus Tech company" },
+    { src: globalviaLogo, alt: "Globalvia Company" },
+    { src: unisysLogo, alt: "Unisys company" },
+    { src: metroLogo, alt: "Metro Madrid company" },
+    { src: g3Logo, alt: "G3 Consulting company" },
+    { src: dishashopLogo, alt: "Disashop company" },
+    { src: mapfreLogo, alt: "Mapfre company" },
+    { src: santanderLogo, alt: "Santander company" },
+  ];
+
+  const logosPerSlide = 3;
+  const totalSlides = Math.ceil(logos.length / logosPerSlide);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+  };
+
+  const getCurrentLogos = () => {
+    const start = currentIndex * logosPerSlide;
+    const end = start + logosPerSlide;
+    return logos.slice(start, end);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
   return (
-    <section className="flex flex-col  gap-20 bg-gradient-to-b from-cyan-800 to-teal-500 py-12">
+    <section className="flex  flex-col gap-20 bg-gradient-to-b from-cyan-800 to-teal-500 py-12">
       <div
-        className="flex flex-col items-center gap-2  text-center uppercase"
+        className="flex flex-col items-center gap-4  text-center "
         role="contentinfo"
         aria-labelledby="section-heading-2"
       >
         <p className="sr-only" id="section-heading-2">
           Section Heading 2: Somos confiados
         </p>
-        <p className="text-xl text-white md:text-2xl" aria-hidden="true">
+        <p
+          className="text-xl uppercase text-white md:text-2xl"
+          aria-hidden="true"
+        >
           Somos
         </p>
-        <h1 className="text-5xl font-extrabold text-white">Confiados</h1>
+        <h1 className="text-5xl font-extrabold uppercase text-white">
+          Confiados
+        </h1>
+        <p className="text-lg  italic text-white">
+          Gracias a la amplia experiencia de nuestro equipo, hemos tenido el
+          privilegio de trabajar con marcas de gran renombre.
+        </p>
       </div>
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 md:grid md:grid-rows-2 md:gap-0 md:grayscale md:hover:grayscale-0">
-        <div className="flex w-full flex-col items-center justify-between  gap-12 transition-all md:flex-row md:gap-0">
-          <img
-            src={aurenLogo}
-            alt="Auren company"
-            className="w-[150px] md:w-[250px]"
-          />
-          <img
-            src={plexusLogo}
-            alt="Plexus Tech company"
-            className="w-[150px] md:w-[250px]"
-          />
-          <img
-            src={globalviaLogo}
-            alt="Globalvia Company"
-            className="w-[150px] md:w-[250px]"
-          />
+      <div className="relative mx-auto  flex h-[300px] w-full max-w-7xl flex-col gap-12 px-6 md:h-[150px] md:grayscale md:hover:grayscale-0">
+        <button
+          onClick={prevSlide}
+          className="absolute left-2 top-[32%] z-20 text-6xl text-white opacity-30 transition-all hover:opacity-100 "
+        >
+          <MdArrowLeft />
+        </button>
+        <div className="flex w-full  flex-col items-center justify-between gap-12 px-24 transition-all md:flex-row">
+          {getCurrentLogos().map((logo, index) => (
+            <img
+              key={index}
+              src={logo.src}
+              alt={logo.alt}
+              className="w-[150px] lg:w-[250px]"
+            />
+          ))}
         </div>
-        <div className="flex w-full flex-col items-center justify-between gap-12 md:flex-row ">
-          <img
-            src={unisysLogo}
-            alt="Unisys company"
-            className="w-[150px] md:w-[250px]"
-          />
-          <img
-            src={metroLogo}
-            alt="Metro Madrid company"
-            className="w-[150px] md:w-[250px]"
-          />
-          <img
-            src={g3Logo}
-            alt="G3 Consulting company"
-            className="h-[45px] md:w-[150px]"
-          />
-        </div>
+        <button
+          onClick={nextSlide}
+          className="absolute right-2 top-[32%] z-20 text-6xl text-white opacity-30 transition-all hover:opacity-100 "
+        >
+          <MdArrowRight />
+        </button>
       </div>
     </section>
   );
