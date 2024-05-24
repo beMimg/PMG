@@ -12,8 +12,10 @@ const ServicioDesarrollo = () => {
       direction="left"
       image={desarrolloWebImg}
     >
-      <DesarrolloPersonalizadoSection />
-      <TechStackSection />
+      <div className="mx-6">
+        <DesarrolloPersonalizadoSection />
+        <TechStackSection />
+      </div>
     </DescripcionDeServicio>
   );
 };

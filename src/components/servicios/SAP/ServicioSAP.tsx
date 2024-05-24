@@ -13,9 +13,12 @@ const ServicioSAP = () => {
       color="rose"
       image={especialistaSapImg}
     >
-      <NegocioSAPSection />
-      <PorqueEligirnosSection />
-      <MetodologiasDeTrabajoSection />
+      <div className="mx-6">
+        <NegocioSAPSection />
+
+        <PorqueEligirnosSection />
+        <MetodologiasDeTrabajoSection />
+      </div>
     </TipoDeServicioSection>
   );
 };
