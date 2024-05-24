@@ -23,9 +23,6 @@ const NavLinks = ({ setIsMenuOpen }: NavLinksProps) => {
       <NavLink onClick={handleClick} className={navLinkStyle} to="contacto">
         Contacto
       </NavLink>
-      <NavLink onClick={handleClick} className={navLinkStyle} to="empleo">
-        Empleo
-      </NavLink>
     </>
   );
 };
