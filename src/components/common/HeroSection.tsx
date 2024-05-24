@@ -1,6 +1,5 @@
 import React from "react";
 import VerticalLine from "./VerticalLine";
-
 interface HeroSectionProps {
   image: string;
   children: React.ReactNode;
@@ -9,7 +8,7 @@ interface HeroSectionProps {
 // This component will be used on every route. All routes follow the same pattern, an image h-screen with some content inside of it.
 const HeroSection = ({ image, children }: HeroSectionProps) => {
   return (
-    <section className="mx-auto flex h-screen max-w-7xl flex-row items-center justify-between gap-6 px-6 pt-[110px]  text-white  md:gap-20">
+    <section className="mx-auto flex h-screen max-w-7xl flex-row justify-between gap-6 px-6 pt-[50px]  text-white md:gap-20   xl:px-0  ">
       <img
         src={image}
         alt="meeting"
