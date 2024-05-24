@@ -11,32 +11,32 @@ import DivMaxW7XL from "../components/common/DivMaxW7XL";
 
 const Nosotros = () => {
   return (
-    <>
+    <main>
       <TopSectionOfEveryRoute image={meetingImg}>
-        <VerticalLine />
-        <div className="flex h-full flex-col justify-evenly ">
-          <h2 className="  text-xl font-bold md:text-5xl ">Sobre Nosotros </h2>
-          <h2 className="text-lg font-semibold opacity-90   md:text-2xl md:opacity-70">
-            En Julio de 2023, nace PMG Solutions & Development, con el objetivo
-            de proporcionar una solución ajustada a las necesidades de cada
-            cliente en todas las áreas tecnológicas de SAP. Nuestro modelo de
-            negocio se basa en la experiencia y la confianza de nuestros
-            clientes. Proporcionando un servicio que va más allá del producto,
-            buscando la adaptación concreta a las necesidades del cliente y
-            priorizando su bienestar durante todo el ciclo de vida de los
-            proyectos.
-          </h2>
+        <div className="flex h-full w-full flex-row items-center gap-12">
+          <VerticalLine />
+          <div className="flex h-full flex-col justify-evenly">
+            <h1 className="font-bold">Sobre Nosotros </h1>
+            <h3 className="text-base font-semibold opacity-90 md:text-3xl md:opacity-70">
+              En Julio de 2023, nace PMG Solutions & Development, con el
+              objetivo de proporcionar una solución ajustada a las necesidades
+              de cada cliente en todas las áreas tecnológicas de SAP. Nuestro
+              modelo de negocio se basa en la experiencia y la confianza de
+              nuestros clientes. Proporcionando un servicio que va más allá del
+              producto, buscando la adaptación concreta a las necesidades del
+              cliente y priorizando su bienestar durante todo el ciclo de vida
+              de los proyectos.
+            </h3>
+          </div>
         </div>
       </TopSectionOfEveryRoute>
-      <Main>
-        <DivMaxW7XL>
-          <PorquePMG />
-          <NuestrosValores />
-          <Certificaciones />
-          <AreaGeografica />
-        </DivMaxW7XL>
-      </Main>
-    </>
+      <div className="mx-6">
+        <PorquePMG />
+        <NuestrosValores />
+        <Certificaciones />
+        <AreaGeografica />
+      </div>
+    </main>
   );
 };
 
