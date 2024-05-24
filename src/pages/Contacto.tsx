@@ -1,39 +1,80 @@
 import meetingImg from "../assets/route-images/hands-together-photo.jpg";
 import happyWomanImg from "../assets/happy-woman.jpg";
-import Main from "../components/common/Main";
 import TopSectionHalfImageHalfContent from "../components/common/TopSectionHalfImageHalfContent";
-import DondeNosEncontramos from "../components/contacto/DondeNosEncontramos";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoIosPhonePortrait } from "react-icons/io";
+import { IoIosMail } from "react-icons/io";
 
 const Contacto = () => {
   return (
     <>
       <TopSectionHalfImageHalfContent image={meetingImg}>
-        <div className="flex h-full flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="flex h-full flex-col items-center justify-evenly gap-4 md:flex-row">
           <img
             src={happyWomanImg}
             alt="happy woman in computer"
             className="hidden h-[80%] rounded-r-full md:block"
           />
-          <div className="flex h-full flex-col  justify-evenly">
-            <h1 className="text-4xl font-semibold lg:text-7xl">¡Hablanos!</h1>
-            <div>
-              <p className="text-xl lg:text-3xl">Teléfono</p>
-              <p className="text-2xl font-semibold lg:text-5xl">
-                (+34) 645 682 314
-              </p>
-            </div>
-            <div>
-              <p className="text-xl lg:text-3xl">Correo electrónico</p>
-              <p className="text-2xl font-semibold lg:text-5xl">
+          <div className="flex h-full flex-col justify-evenly">
+            <div className="flex flex-col items-center gap-4">
+              <h2 className="text-2xl font-semibold">Escribenos</h2>
+              <a
+                className="logo-background-color p-4 px-8 font-semibold uppercase text-white transition-all hover:scale-105"
+                href="mailto:info@pmg-solutions.es"
+              >
                 info@pmg-solutions.es
-              </p>
+              </a>
+            </div>
+            <div className="flex flex-col items-center gap-4">
+              <h2 className="text-2xl font-semibold">LLamanos</h2>
+              <a
+                className="logo-background-color p-4 px-8 font-semibold uppercase text-white transition-all hover:scale-105"
+                href="tel:+34 645 682 314"
+              >
+                (+34) 645 682 314
+              </a>
             </div>
           </div>
         </div>
       </TopSectionHalfImageHalfContent>
-      <Main>
-        <DondeNosEncontramos />
-      </Main>
+      <section className="bg-gradient-to-b from-cyan-800 to-teal-500  px-6 py-24 text-white ">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 ">
+          <h1 className="text-2xl font-semibold">Encuentranos</h1>
+          <div className="flex flex-col gap-8 rounded-lg   bg-white p-2 px-6 text-black md:grid md:grid-cols-3 md:justify-items-center">
+            <div className="flex flex-row items-center gap-4 ">
+              <FaLocationDot className="text-2xl" />
+              <div>
+                <p className="font-semibold">Localizacion</p>
+                <p className="opacity-80">
+                  Calle Plaza de España Nº 1, Planta 1, Oficina 5, 11630 Arcos
+                  de la Frontera, Cádiz, España.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center gap-4">
+              <IoIosMail className="text-2xl" />
+              <div>
+                <p className="font-semibold">Email</p>
+                <a className="opacity-80" href="mailto:info@pmg-solutions.es">
+                  info@pmg-solutions.es
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-row items-center gap-4">
+              <IoIosPhonePortrait className="text-2xl" />
+              <div>
+                <p className="font-semibold">Telefono</p>
+                <a className="opacity-80" href="tel:+34 645 682 314">
+                  (+34) 645 682 314
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Mapa</h1>
+      </section>
     </>
   );
 };

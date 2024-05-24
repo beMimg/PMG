@@ -21,7 +21,7 @@ const CustomLogo = ({ component }: CustomLogoProps) => {
       >
         <h1 className="text-3xl font-bold">PMG</h1>
         <h2
-          className={`w-full ${component === "footer" ? "text-lg" : "text-xs"} md:text-xl`}
+          className={`w-full ${component === "footer" ? "text-center text-lg" : "text-xs"} md:text-xl`}
         >
           Solutions & Development
         </h2>
