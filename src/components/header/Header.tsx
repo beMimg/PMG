@@ -47,8 +47,8 @@ const Header = () => {
     <header
       className={` fixed z-50 w-full transition-all ${(isMdScreen && !isTopOfPage) || (isMdScreen && isMenuOpen) || (!isTopOfPage && !isMdScreen) ? "logo-border-bottom-color bg-white text-black" : "bg-transparent text-white"} `}
     >
-      <nav className={`w-full transition-all`}>
-        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 px-6 py-3 md:justify-around">
+      <nav className={`w-full px-6 transition-all`}>
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 py-3 md:justify-around ">
           <div className="flex w-full flex-row items-center justify-between ">
             <CustomLogo component="header" />
             {isMdScreen ? (

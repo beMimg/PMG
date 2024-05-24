@@ -3,7 +3,6 @@ import DescripcionDeServicio from "../TipoDeServicioSection";
 import desarrolloWebImg from "../../../assets/desarrollo-web.jpg";
 import DesarrolloPersonalizadoSection from "./DesarrolloPersonalizadoSection";
 import TechStackSection from "./TechStackSection";
-import DivMaxW7XL from "../../common/DivMaxW7XL";
 
 const ServicioDesarrollo = () => {
   return (
@@ -13,10 +12,8 @@ const ServicioDesarrollo = () => {
       direction="left"
       image={desarrolloWebImg}
     >
-      <DivMaxW7XL>
-        <DesarrolloPersonalizadoSection />
-        <TechStackSection />
-      </DivMaxW7XL>
+      <DesarrolloPersonalizadoSection />
+      <TechStackSection />
     </DescripcionDeServicio>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/logo/logo_pmg2-removebg-preview.png";
 import { Link } from "react-router-dom";
 import CustomLogo from "../common/CustomLogo";
 import Socials from "./Socials";
@@ -11,7 +10,7 @@ const Footer = () => {
         <div className="pl-6 md:self-start md:pl-0">
           <CustomLogo component="footer" />
         </div>
-        <div className="flex h-full w-full flex-row justify-between justify-self-center font-semibold md:w-min  md:flex-col md:text-center ">
+        <div className="flex h-full w-full flex-row justify-between justify-self-center font-medium  md:w-min  md:flex-col md:text-center ">
           <Link to="nosotros">Nosotros</Link>
           <Link to="servicios">Servicios</Link>
           <Link to="contacto">Contacto</Link>

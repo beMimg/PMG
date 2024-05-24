@@ -1,22 +1,18 @@
 import React from "react";
 import meetingImg from "../assets/route-images/nosotros-meeting.jpg";
-import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
-import VerticalLine from "../components/common/VerticalLine";
+import TopSectionOfEveryRoute from "../components/common/HeroSection";
 import PorquePMG from "../components/nosotros/PorquePMG";
 import NuestrosValores from "../components/nosotros/NuestrosValores";
 import Certificaciones from "../components/nosotros/Certificaciones";
-import Main from "../components/common/Main";
 import AreaGeografica from "../components/nosotros/AreaGeografica";
-import DivMaxW7XL from "../components/common/DivMaxW7XL";
 
 const Nosotros = () => {
   return (
-    <>
+    <main>
       <TopSectionOfEveryRoute image={meetingImg}>
-        <VerticalLine />
-        <div className="flex h-full flex-col justify-evenly ">
-          <h2 className="  text-xl font-bold md:text-5xl ">Sobre Nosotros </h2>
-          <h2 className="text-lg font-semibold opacity-90   md:text-2xl md:opacity-70">
+        <div className="flex h-full flex-col justify-evenly">
+          <h1 className="font-bold">Sobre Nosotros </h1>
+          <h3 className="text-base font-semibold opacity-90 md:text-3xl md:opacity-70">
             En Julio de 2023, nace PMG Solutions & Development, con el objetivo
             de proporcionar una solución ajustada a las necesidades de cada
             cliente en todas las áreas tecnológicas de SAP. Nuestro modelo de
@@ -25,18 +21,16 @@ const Nosotros = () => {
             buscando la adaptación concreta a las necesidades del cliente y
             priorizando su bienestar durante todo el ciclo de vida de los
             proyectos.
-          </h2>
+          </h3>
         </div>
       </TopSectionOfEveryRoute>
-      <Main>
-        <DivMaxW7XL>
-          <PorquePMG />
-          <NuestrosValores />
-          <Certificaciones />
-          <AreaGeografica />
-        </DivMaxW7XL>
-      </Main>
-    </>
+      <div className="mx-6">
+        <PorquePMG />
+        <NuestrosValores />
+        <Certificaciones />
+        <AreaGeografica />
+      </div>
+    </main>
   );
 };
 

@@ -13,18 +13,15 @@ const QueNosDefineSection = () => {
         <p id="section-heading" className="sr-only">
           Section heading: Que nos define
         </p>
-        <p className="text-xl md:text-2xl" aria-hidden="true">
+        <h3 className="" aria-hidden="true">
           Que
-        </p>
-        <p
-          className="logo-text-color text-4xl font-extrabold"
-          aria-hidden="true"
-        >
+        </h3>
+        <h1 className="logo-text-color  font-extrabold" aria-hidden="true">
           nos define
-        </p>
-        <h1 className=" text-3xl font-semibold opacity-80">
-          ACELERACIÓN DEL CRECIMIENTO DIGITAL
         </h1>
+        <h2 className="font-semibold opacity-80">
+          ACELERACIÓN DEL CRECIMIENTO DIGITAL
+        </h2>
       </div>
       <div className="flex flex-col gap-20 text-lg md:grid md:grid-cols-3">
         <div className="flex flex-col items-center justify-start gap-14 ">

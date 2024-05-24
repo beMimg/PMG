@@ -4,7 +4,6 @@ import especialistaSapImg from "../../../assets/route-images/hands-together-phot
 import MetodologiasDeTrabajoSection from "./MetodologiasDeTrabajoSection";
 import PorqueEligirnosSection from "./PorqueEligirnosSection";
 import NegocioSAPSection from "./NegocioSAPSection";
-import DivMaxW7XL from "../../common/DivMaxW7XL";
 
 const ServicioSAP = () => {
   return (
@@ -14,11 +13,9 @@ const ServicioSAP = () => {
       color="rose"
       image={especialistaSapImg}
     >
-      <DivMaxW7XL>
-        <NegocioSAPSection />
-        <PorqueEligirnosSection />
-        <MetodologiasDeTrabajoSection />
-      </DivMaxW7XL>
+      <NegocioSAPSection />
+      <PorqueEligirnosSection />
+      <MetodologiasDeTrabajoSection />
     </TipoDeServicioSection>
   );
 };

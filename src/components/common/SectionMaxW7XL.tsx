@@ -14,7 +14,7 @@ const SectionMaxW7XL = ({ children, colored, bgHoverColor }: SectionProps) => {
 
   return (
     <section
-      className={`${colored && "rounded-lg bg-gray-100 "} ${finalHoverColor} mx-auto flex w-full max-w-7xl flex-col justify-between gap-14 p-6  md:gap-24`}
+      className={`${colored && "rounded-lg bg-gray-100 "} ${finalHoverColor}  mx-auto my-24 flex w-full max-w-7xl flex-col justify-between gap-14 p-6  md:gap-24`}
     >
       {children}
     </section>

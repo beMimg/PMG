@@ -58,19 +58,14 @@ const TestimoniosSection = () => {
         <p className="sr-only" id="section-heading-2">
           Section Heading 2: Somos confiados
         </p>
-        <p
-          className="text-xl uppercase text-white md:text-2xl"
-          aria-hidden="true"
-        >
+        <h2 className=" uppercase text-white " aria-hidden="true">
           Somos
-        </p>
-        <h1 className="text-5xl font-extrabold uppercase text-white">
-          Confiados
-        </h1>
-        <p className="text-lg  italic text-white">
+        </h2>
+        <h1 className="font-extrabold uppercase text-white">Confiados</h1>
+        <h3 className="subtitle italic text-white">
           Gracias a la amplia experiencia de nuestro equipo, hemos tenido el
           privilegio de trabajar con marcas de gran renombre.
-        </p>
+        </h3>
       </div>
       <div className="relative mx-auto  flex h-[300px] w-full max-w-7xl flex-col gap-12 px-6 md:h-[150px] md:grayscale md:hover:grayscale-0">
         <button

@@ -12,15 +12,10 @@ const Certificaciones = () => {
     "rounded-md border border-blue-500 max-h-[150px] hover:-translate-y-2 transition-all";
 
   return (
-    // <div className="relative py-12">
-    //   <div
-    //     style={{ backgroundColor: "#f0f0f0" }}
-    //     className="absolute left-0 top-0 -z-20 h-full w-full"
-    //   ></div>
     <SectionMaxW7XL colored={true} bgHoverColor="theme">
-      <h1 className="text-4xl font-extrabold ">Certificaciones</h1>
+      <h1 className="font-bold">Certificaciones</h1>
       <div className="flex flex-col justify-between  gap-14 lg:grid lg:grid-cols-2">
-        <div className="flex flex-col items-start justify-between gap-12 text-lg">
+        <div className="flex flex-col items-start justify-between gap-12 ">
           <p>
             Dentro de PMG Solutions & Development, creemos que el crecimiento es
             muy importante, pero para crecer, primero debemos aprender.
@@ -35,7 +30,7 @@ const Certificaciones = () => {
             por nuestro equipo.
           </p>
         </div>
-        <aside className=" grid h-full grid-cols-2 gap-6 place-self-center md:grid-cols-3 lg:items-center">
+        <div className=" grid h-full grid-cols-2 gap-6 place-self-center md:grid-cols-3 lg:items-center">
           <img
             src={abapForSapImg}
             alt="Abap For SAP HANA 2.0 - Certified Specialist"
@@ -66,7 +61,7 @@ const Certificaciones = () => {
             alt="ABAP with SAP NetWeaver 7.50"
             className={imageStyle}
           />
-        </aside>
+        </div>
       </div>
     </SectionMaxW7XL>
     // </div>
