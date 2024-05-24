@@ -1,13 +1,10 @@
 import React from "react";
 import meetingImg from "../assets/route-images/nosotros-meeting.jpg";
 import TopSectionOfEveryRoute from "../components/common/HeroSection";
-import VerticalLine from "../components/common/VerticalLine";
 import PorquePMG from "../components/nosotros/PorquePMG";
 import NuestrosValores from "../components/nosotros/NuestrosValores";
 import Certificaciones from "../components/nosotros/Certificaciones";
-import Main from "../components/common/Main";
 import AreaGeografica from "../components/nosotros/AreaGeografica";
-import DivMaxW7XL from "../components/common/DivMaxW7XL";
 
 const Nosotros = () => {
   return (

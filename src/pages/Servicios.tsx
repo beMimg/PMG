@@ -1,8 +1,6 @@
 import React from "react";
 import meetingImg from "../assets/route-images/servicios-meeting.jpg";
 import TopSectionOfEveryRoute from "../components/common/HeroSection";
-import VerticalLine from "../components/common/VerticalLine";
-import Main from "../components/common/Main";
 import ServicioDesarrollo from "../components/servicios/Desarrollo/ServicioDesarrollo";
 import ServicioSAP from "../components/servicios/SAP/ServicioSAP";
 

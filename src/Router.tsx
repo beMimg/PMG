@@ -4,7 +4,6 @@ import Homepage from "./pages/Homepage";
 import Nosotros from "./pages/Nosotros";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
-import Empleo from "./pages/Empleo";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +14,6 @@ const router = createBrowserRouter([
       { path: "nosotros", element: <Nosotros /> },
       { path: "servicios", element: <Servicios /> },
       { path: "contacto", element: <Contacto /> },
-      { path: "empleo", element: <Empleo /> },
     ],
   },
 ]);

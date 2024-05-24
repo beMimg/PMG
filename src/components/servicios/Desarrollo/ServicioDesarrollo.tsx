@@ -3,7 +3,6 @@ import DescripcionDeServicio from "../TipoDeServicioSection";
 import desarrolloWebImg from "../../../assets/desarrollo-web.jpg";
 import DesarrolloPersonalizadoSection from "./DesarrolloPersonalizadoSection";
 import TechStackSection from "./TechStackSection";
-import DivMaxW7XL from "../../common/DivMaxW7XL";
 
 const ServicioDesarrollo = () => {
   return (
