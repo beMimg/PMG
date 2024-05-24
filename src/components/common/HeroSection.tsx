@@ -1,4 +1,5 @@
 import React from "react";
+import VerticalLine from "./VerticalLine";
 
 interface HeroSectionProps {
   image: string;
@@ -17,7 +18,10 @@ const HeroSection = ({ image, children }: HeroSectionProps) => {
           filter: "brightness(0.15)",
         }}
       />
-      {children}
+      <div className="flex h-full w-full flex-row items-center gap-12">
+        <VerticalLine />
+        {children}
+      </div>
     </section>
   );
 };

@@ -30,7 +30,7 @@ const TipoDeServicioSection = ({
           "bg-gradient-to-br from-fuchsia-600 to-violet-900";
 
   return (
-    <section className="flex flex-col gap-16">
+    <section className="mt-24 flex flex-col gap-16">
       {/* Horizontal Bar */}
       <div
         className={`flex h-[160px] w-[95%] flex-row items-center gap-4 p-6 transition-all md:h-[200px] md:w-[70%] md:gap-0   ${direction === "right" ? "rounded-r-full" : "self-end rounded-l-full"} ${cssColor}`}

@@ -33,7 +33,11 @@ const TechStackSection = () => {
   return (
     <SectionMaxW7XL colored={true} bgHoverColor="theme">
       <div className="flex w-full flex-col gap-8">
-        <h1 className="text-4xl font-bold">Algunas de nuetras tecnologias</h1>
+        <h1 className=" font-bold">¿Qué estamos utilizando?</h1>
+        <h5>
+          Nos adaptamos a <strong>tus necesidades</strong> para ofrecerte la{" "}
+          <strong>mejor solución.</strong>
+        </h5>
         <div className="grid grid-cols-3 place-items-center gap-6 md:grid-cols-6">
           {techStackLogos.map((stack) => (
             <TwoSidesCard title={stack.title} image={stack.image} />

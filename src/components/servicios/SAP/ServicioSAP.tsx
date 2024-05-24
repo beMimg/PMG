@@ -14,11 +14,9 @@ const ServicioSAP = () => {
       color="rose"
       image={especialistaSapImg}
     >
-      <DivMaxW7XL>
-        <NegocioSAPSection />
-        <PorqueEligirnosSection />
-        <MetodologiasDeTrabajoSection />
-      </DivMaxW7XL>
+      <NegocioSAPSection />
+      <PorqueEligirnosSection />
+      <MetodologiasDeTrabajoSection />
     </TipoDeServicioSection>
   );
 };

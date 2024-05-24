@@ -13,10 +13,8 @@ const ServicioDesarrollo = () => {
       direction="left"
       image={desarrolloWebImg}
     >
-      <DivMaxW7XL>
-        <DesarrolloPersonalizadoSection />
-        <TechStackSection />
-      </DivMaxW7XL>
+      <DesarrolloPersonalizadoSection />
+      <TechStackSection />
     </DescripcionDeServicio>
   );
 };

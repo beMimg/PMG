@@ -5,8 +5,8 @@ const DesarrolloPersonalizadoSection = () => {
   return (
     <SectionMaxW7XL colored={true} bgHoverColor="theme">
       <div className="flex flex-col gap-8">
-        <h1 className="text-4xl font-bold">Desarrollo Personalizado</h1>
-        <div className="text-lg">
+        <h1 className="font-bold">Desarrollo Personalizado</h1>
+        <div>
           <p>
             Desarrollamos soluciones móviles y web utilizando las tecnologías
             más avanzadas para abordar los desafíos empresariales de nuestros

@@ -10,13 +10,13 @@ const MetodologiasDeTrabajoSection = () => {
     <SectionMaxW7XL colored={true} bgHoverColor="rose">
       <div className="flex flex-col justify-between gap-12 md:flex-row">
         <div className="flex max-w-[700px] flex-col gap-10 transition-transform duration-200 ease-in-out group-hover:translate-x-5 md:justify-between md:gap-0">
-          <h1 className="text-4xl font-bold">Metodologías de trabajo</h1>
-          <p className="text-wrap text-xl">
+          <h1 className=" font-bold">Metodologías de trabajo</h1>
+          <p>
             Nos adaptamos al modelo de negocio, pero si el cliente lo necesita,
             proporcionamos metodologías ágiles para el ciclo de vida de los
             proyectos.
           </p>
-          <p className="text-wrap text-xl">
+          <p>
             Proporcionamos conocimientos con diferentes herramientas para
             gestión de peticiones y el tratamiento de los proyectos.
           </p>

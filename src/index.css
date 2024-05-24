@@ -20,7 +20,8 @@
   }
   p,
   button,
-  a {
+  a,
+  li {
     @apply text-base md:text-lg;
   }
   .subtitle {
