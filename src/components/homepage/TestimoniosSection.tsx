@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import aurenLogo from "../../assets/testimonios/auren-logo.png";
 import plexusLogo from "../../assets/testimonios/plexus-logo.png";
 import globalviaLogo from "../../assets/testimonios/globalvia-logo.png";
@@ -29,9 +29,9 @@ const TestimoniosSection = () => {
   const logosPerSlide = 3;
   const totalSlides = Math.ceil(logos.length / logosPerSlide);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-  };
+  }, [totalSlides]);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
@@ -46,7 +46,7 @@ const TestimoniosSection = () => {
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [currentIndex, nextSlide]);
 
   return (
     <section className="flex  flex-col gap-20 bg-gradient-to-b from-cyan-800 to-teal-500 py-12">

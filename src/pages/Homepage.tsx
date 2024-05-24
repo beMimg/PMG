@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import QueNosDefineSection from "../components/homepage/QueNosDefineSection";
 import TestimoniosSection from "../components/homepage/TestimoniosSection";
 import HeroSection from "../components/common/HeroSection";
-import VerticalLine from "../components/common/VerticalLine";
 import PorqueEligirnosSection from "../components/servicios/SAP/PorqueEligirnosSection";
 
 const Homepage = () => {

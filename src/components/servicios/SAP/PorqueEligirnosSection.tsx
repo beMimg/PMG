@@ -1,23 +1,8 @@
 import React from "react";
-import sapAbapLogo from "../../../assets/techstack/sap/sap-abap.jpg";
-import sapBasisLogo from "../../../assets/techstack/sap/sap-basis.png";
-import sapBtpLogo from "../../../assets/techstack/sap/sap-btp.png";
-import sapCloudLogo from "../../../assets/techstack/sap/sap-cloud.jpg";
-import sapFioriLogo from "../../../assets/techstack/sap/sap-fiori.png";
-import sapHanaLogo from "../../../assets/techstack/sap/sap-hana.webp";
 import sapLogo from "../../../assets/techstack/sap/SAP_2011_logo.svg.png";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import SectionMaxW7XL from "../../common/SectionMaxW7XL";
-
-const sapLogos = [
-  { alt: "SAP Abap logo", image: sapAbapLogo },
-  { alt: "SAP Basis Logo", image: sapBasisLogo },
-  { alt: "SAP BTP Logo", image: sapBtpLogo },
-  { alt: "Sap Cloud Logo", image: sapCloudLogo },
-  { alt: "SAP Fiori Logo", image: sapFioriLogo },
-  { alt: "SAP Hana Logo", image: sapHanaLogo },
-];
 
 const PorqueEligirnosSection = () => {
   return (
