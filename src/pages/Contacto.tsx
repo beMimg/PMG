@@ -2,7 +2,6 @@ import meetingImg from "../assets/route-images/hands-together-photo.jpg";
 import happyWomanImg from "../assets/happy-woman.jpg";
 import Main from "../components/common/Main";
 import TopSectionHalfImageHalfContent from "../components/common/TopSectionHalfImageHalfContent";
-import SectionMaxW7XL from "../components/common/SectionMaxW7XL";
 import DondeNosEncontramos from "../components/contacto/DondeNosEncontramos";
 
 const Contacto = () => {
