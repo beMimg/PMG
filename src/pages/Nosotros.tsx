@@ -1,6 +1,6 @@
 import React from "react";
 import meetingImg from "../assets/route-images/nosotros-meeting.jpg";
-import TopSectionOfEveryRoute from "../components/common/TopSectionOfEveryRoute";
+import TopSectionOfEveryRoute from "../components/common/HeroSection";
 import VerticalLine from "../components/common/VerticalLine";
 import PorquePMG from "../components/nosotros/PorquePMG";
 import NuestrosValores from "../components/nosotros/NuestrosValores";
