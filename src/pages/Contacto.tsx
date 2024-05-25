@@ -4,7 +4,6 @@ import TopSectionHalfImageHalfContent from "../components/common/TopSectionHalfI
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import SectionMaxW7XL from "../components/common/SectionMaxW7XL";
 import GoogleMap from "../components/contacto/GoogleMap";
 
 const Contacto = () => {
