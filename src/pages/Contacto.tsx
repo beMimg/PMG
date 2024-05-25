@@ -5,6 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import SectionMaxW7XL from "../components/common/SectionMaxW7XL";
+import GoogleMap from "../components/contacto/GoogleMap";
 
 const Contacto = () => {
   return (
@@ -38,7 +39,7 @@ const Contacto = () => {
           </div>
         </div>
       </TopSectionHalfImageHalfContent>
-      <section className="mt-24 bg-gradient-to-b from-cyan-800  to-teal-500 px-6 py-24 text-white">
+      <section className=" mt-24 flex  flex-col items-center gap-20 bg-gradient-to-b from-cyan-800 to-teal-500 px-6 py-24 text-white">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 ">
           <h1 className="font-bold">Encuéntranos</h1>
           <div className="flex flex-col gap-8 rounded-lg   bg-white p-2 px-6 text-black md:grid md:grid-cols-3 md:justify-items-center">
@@ -73,9 +74,9 @@ const Contacto = () => {
           </div>
         </div>
       </section>
-      <SectionMaxW7XL colored={false} bgHoverColor="none">
-        <p>lolk</p>
-      </SectionMaxW7XL>
+      <div className="mx-6">
+        <GoogleMap />
+      </div>
     </main>
   );
 };
