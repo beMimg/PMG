@@ -15,7 +15,6 @@ const ServicioSAP = () => {
     >
       <div className="mx-6">
         <NegocioSAPSection />
-
         <PorqueEligirnosSection />
         <MetodologiasDeTrabajoSection />
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import scaleGraphImg from "../../assets/scale-porquepmg.jpg";
 import SectionMaxW7XL from "../common/SectionMaxW7XL";
+import porquePmgImage from "../../assets/porque-pmg.jpg";
 
 const PorquePMG = () => {
   return (
@@ -31,7 +31,7 @@ const PorquePMG = () => {
           </p>
         </div>
         <img
-          src={scaleGraphImg}
+          src={porquePmgImage}
           alt="scale graph"
           className="logo-border-color h-[250px] w-[250px] min-w-[250px] self-center rounded-full object-cover object-center transition-all hover:scale-105 lg:h-[300px] lg:w-[300px] lg:min-w-[300px]  xl:h-[400px] xl:w-[400px] xl:min-w-[400px] "
         />
