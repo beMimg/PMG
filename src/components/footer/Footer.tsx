@@ -14,7 +14,6 @@ const Footer = () => {
           <Link to="nosotros">Nosotros</Link>
           <Link to="servicios">Servicios</Link>
           <Link to="contacto">Contacto</Link>
-          <Link to="empleo">Empleo</Link>
         </div>
         <div className="justify-self-center">
           <Socials />

@@ -6,7 +6,7 @@ const Socials = () => {
   return (
     <div className="flex flex-row gap-3 md:flex-col">
       <a
-        href="google"
+        href="https://www.linkedin.com/company/pmg-solutions-development"
         className="group rounded-full  p-2 transition-all hover:bg-blue-700"
       >
         <FaLinkedinIn className="text-2xl text-black transition-all group-hover:text-white md:text-3xl" />
