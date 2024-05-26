@@ -1,6 +1,4 @@
 import React from "react";
-import SectionMaxW7XL from "../common/SectionMaxW7XL";
-import { CiLink } from "react-icons/ci";
 
 const GoogleMap = () => {
   return (
