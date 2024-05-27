@@ -1,18 +1,23 @@
 import React from "react";
 import VerticalLine from "./VerticalLine";
+import "lazysizes";
+
 interface HeroSectionProps {
   image: string;
+  placeholder: string;
   children: React.ReactNode;
 }
 
 // This component will be used on every route. All routes follow the same pattern, an image h-screen with some content inside of it.
-const HeroSection = ({ image, children }: HeroSectionProps) => {
+const HeroSection = ({ image, placeholder, children }: HeroSectionProps) => {
+  console.log(image);
   return (
     <section className="mx-auto flex h-screen max-w-7xl flex-row justify-between gap-6 px-6 pt-0 text-white  md:gap-20 md:pt-[50px]   xl:px-0  ">
       <img
-        src={image}
+        data-src={image}
+        src={placeholder}
         alt="meeting"
-        className={`absolute left-0 top-0 -z-20 h-full w-full object-cover object-center`}
+        className={`lazyload absolute left-0 top-0 -z-20 h-full w-full object-cover object-center`}
         style={{
           filter: "brightness(0.15)",
         }}

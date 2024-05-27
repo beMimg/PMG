@@ -2,16 +2,23 @@ import meetingImg from "../assets/route-images/hands-together-photo.jpg";
 import happyWomanImg from "../assets/happy-woman.jpg";
 import TopSectionHalfImageHalfContent from "../components/common/TopSectionHalfImageHalfContent";
 import Encuentranos from "../components/contacto/Encuentranos";
+import meetingImgPlaceholder from "../assets/route-images/hands-together-photo-placehoder.jpg";
+import "lazysizes";
+import happyWomanPlaceholder from "../assets/happy-woman-placeholder.jpg";
 
 const Contacto = () => {
   return (
     <main>
-      <TopSectionHalfImageHalfContent image={meetingImg}>
+      <TopSectionHalfImageHalfContent
+        placeholder={meetingImgPlaceholder}
+        image={meetingImg}
+      >
         <div className="flex h-full flex-col items-center justify-evenly gap-4 md:flex-row">
           <img
-            src={happyWomanImg}
+            data-src={happyWomanImg}
+            src={happyWomanPlaceholder}
             alt="happy woman in computer"
-            className="hidden h-[80%] w-[60%] rounded-r-full object-cover object-center md:block"
+            className="lazyload hidden h-[80%] w-[60%] rounded-r-full object-cover object-center md:block"
           />
           <div className="flex h-full flex-col justify-evenly">
             <div className="flex flex-col items-center gap-4">

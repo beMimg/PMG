@@ -5,11 +5,15 @@ import PorquePMG from "../components/nosotros/PorquePMG";
 import NuestrosValores from "../components/nosotros/NuestrosValores";
 import Certificaciones from "../components/nosotros/Certificaciones";
 import AreaGeografica from "../components/nosotros/AreaGeografica";
+import meetingImgPlaceholder from "../assets/route-images/nosotros-meeting-placeholder.jpg";
 
 const Nosotros = () => {
   return (
     <main>
-      <TopSectionOfEveryRoute image={meetingImg}>
+      <TopSectionOfEveryRoute
+        placeholder={meetingImgPlaceholder}
+        image={meetingImg}
+      >
         <div className="flex h-full flex-col justify-evenly">
           <h1 className="font-bold">Sobre Nosotros </h1>
           <h3 className="text-base font-semibold opacity-90 md:text-3xl md:opacity-70">
