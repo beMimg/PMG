@@ -42,38 +42,33 @@ export const negocios = [
 
 const fadeInAnimationVariants = {
   initial: { opacity: 0, y: 100 },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.01 * index,
-    },
-  }),
+  animate: { opacity: 1, y: 0 },
 };
 
 const NegocioSAPSection = () => {
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-24">
-      <div className=" grid  gap-16  text-center md:grid-cols-3">
+      <motion.div
+        viewport={{
+          once: true,
+        }}
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        className=" grid  gap-16  text-center md:grid-cols-3"
+      >
         {negocios.map((negocio) => (
-          <motion.div
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            custom={negocio.index}
+          <div
             key={negocio.index}
-            viewport={{
-              once: true,
-            }}
             className="blurred-bg relative rounded-lg transition-all duration-200 ease-in-out "
           >
             <div className="flex h-full w-full flex-col gap-2 rounded-lg bg-gray-50 p-4 shadow-lg transition-all hover:scale-95 hover:shadow-none">
               <h4 className="font-semibold">{negocio.title}</h4>
               <p>{negocio.description}</p>
             </div>
-          </motion.div>
+          </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
