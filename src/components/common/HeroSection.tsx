@@ -10,9 +10,8 @@ interface HeroSectionProps {
 
 // This component will be used on every route. All routes follow the same pattern, an image h-screen with some content inside of it.
 const HeroSection = ({ image, placeholder, children }: HeroSectionProps) => {
-  console.log(image);
   return (
-    <section className="mx-auto flex h-screen max-w-7xl flex-row justify-between gap-6 px-6 pt-0 text-white  md:gap-20 md:pt-[50px]   xl:px-0  ">
+    <section className="mx-auto flex h-screen max-w-7xl  justify-between px-6 pt-0 text-white  md:gap-20 md:pt-[50px]   xl:px-0  ">
       <img
         data-src={image}
         src={placeholder}
@@ -22,7 +21,7 @@ const HeroSection = ({ image, placeholder, children }: HeroSectionProps) => {
           filter: "brightness(0.15)",
         }}
       />
-      <div className="flex h-full w-full flex-row items-center gap-12">
+      <div className="flex flex-row items-center gap-12">
         <VerticalLine />
         {children}
       </div>
