@@ -5,8 +5,8 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-gray-300 to-gray-100 p-6 py-14 ">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-12 px-6 text-sm md:grid md:grid-cols-3">
+    <footer className="flex w-full flex-col gap-8 bg-gradient-to-b from-gray-300 to-gray-100 p-6 pt-14">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-12 px-6 text-sm md:grid md:grid-cols-3">
         <div className="pl-6 md:self-start md:pl-0">
           <CustomLogo component="footer" />
         </div>
@@ -18,6 +18,9 @@ const Footer = () => {
         <div className="justify-self-center">
           <Socials />
         </div>
+      </div>
+      <div className="flex w-full items-center justify-center">
+        <p className=" text-xs">© 2024 PMG. All rights reserved ©.</p>
       </div>
     </footer>
   );
