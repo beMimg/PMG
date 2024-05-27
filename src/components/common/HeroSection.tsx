@@ -21,7 +21,7 @@ const HeroSection = ({ image, placeholder, children }: HeroSectionProps) => {
           filter: "brightness(0.15)",
         }}
       />
-      <div className="flex flex-row items-center gap-12">
+      <div className="flex h-[90%] flex-row items-center gap-12 self-center md:h-full">
         <VerticalLine />
         {children}
       </div>
