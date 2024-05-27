@@ -10,6 +10,12 @@ import { MdArrowRight } from "react-icons/md";
 import dishashopLogo from "../../assets/testimonios/disashop-logo.png";
 import mapfreLogo from "../../assets/testimonios/mapfre-logo.svg.png";
 import santanderLogo from "../../assets/testimonios/santander-logo.png";
+import { motion } from "framer-motion";
+
+const widthIncreaseAnimationVariants = {
+  initial: { opacity: 0, y: 100 },
+  animate: { opacity: 1, y: 0 },
+};
 
 const TestimoniosSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,7 +55,12 @@ const TestimoniosSection = () => {
   }, [currentIndex, nextSlide]);
 
   return (
-    <section className="flex  flex-col gap-20 bg-gradient-to-b from-cyan-800 to-teal-500 py-12">
+    <motion.section
+      variants={widthIncreaseAnimationVariants}
+      initial="initial"
+      whileInView="animate"
+      className="flex  flex-col gap-20 bg-gradient-to-b from-cyan-800 to-teal-500 py-12"
+    >
       <div
         className="flex flex-col items-center gap-4  text-center "
         role="contentinfo"
@@ -91,7 +102,7 @@ const TestimoniosSection = () => {
           <MdArrowRight />
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
