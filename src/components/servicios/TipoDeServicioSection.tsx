@@ -1,4 +1,5 @@
 import React from "react";
+import "lazysizes";
 
 interface TipoDeServicioSectionProps {
   direction: "right" | "left";
@@ -6,6 +7,7 @@ interface TipoDeServicioSectionProps {
   image: string;
   children: React.ReactNode;
   color: "rose" | "blue" | "purple";
+  placeholder: string;
 }
 
 const TipoDeServicioSection = ({
@@ -14,9 +16,10 @@ const TipoDeServicioSection = ({
   image,
   children,
   color,
+  placeholder,
 }: TipoDeServicioSectionProps) => {
   const imgStyle =
-    " h-[115px] w-[115px] self-center rounded-full object-cover object-center md:h-[160px] md:w-[160px]";
+    "lazyload h-[115px] w-[115px] self-center rounded-full object-cover object-center md:h-[160px] md:w-[160px]";
 
   const titleStyle =
     " w-full text-3xl font-bold text-white md:text-center md:text-6xl";
@@ -38,11 +41,21 @@ const TipoDeServicioSection = ({
         {direction === "right" ? (
           <>
             <h1 className={titleStyle}>{title}</h1>
-            <img src={image} alt={title} className={imgStyle} />
+            <img
+              src={placeholder}
+              data-src={image}
+              alt={title}
+              className={imgStyle}
+            />
           </>
         ) : (
           <>
-            <img src={image} alt={title} className={imgStyle} />
+            <img
+              src={placeholder}
+              data-src={image}
+              alt={title}
+              className={imgStyle}
+            />
             <h1 className={titleStyle}>{title}</h1>
           </>
         )}

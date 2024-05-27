@@ -4,10 +4,12 @@ import especialistaSapImg from "../../../assets/route-images/hands-together-phot
 import MetodologiasDeTrabajoSection from "./MetodologiasDeTrabajoSection";
 import PorqueEligirnosSection from "./PorqueEligirnosSection";
 import NegocioSAPSection from "./NegocioSAPSection";
+import especialistaSapPlaceholder from "../../../assets/route-images/hands-together-photo-placehoder.jpg";
 
 const ServicioSAP = () => {
   return (
     <TipoDeServicioSection
+      placeholder={especialistaSapPlaceholder}
       direction="right"
       title="Especialistas en SAP"
       color="rose"

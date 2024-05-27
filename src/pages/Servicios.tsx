@@ -3,11 +3,15 @@ import meetingImg from "../assets/route-images/servicios-meeting.jpg";
 import TopSectionOfEveryRoute from "../components/common/HeroSection";
 import ServicioDesarrollo from "../components/servicios/Desarrollo/ServicioDesarrollo";
 import ServicioSAP from "../components/servicios/SAP/ServicioSAP";
+import meetingImgPlaceholder from "../assets/route-images/servicios-meeting-placeholder.jpg";
 
 const Servicios = () => {
   return (
     <main>
-      <TopSectionOfEveryRoute image={meetingImg}>
+      <TopSectionOfEveryRoute
+        placeholder={meetingImgPlaceholder}
+        image={meetingImg}
+      >
         <div className="flex h-full flex-col justify-evenly ">
           <h1 className=" font-bold  ">Nos adaptamos a tu negocio</h1>
           <h3 className="font-semibold opacity-90 md:opacity-70">
