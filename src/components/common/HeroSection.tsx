@@ -1,6 +1,7 @@
 import React from "react";
 import VerticalLine from "./VerticalLine";
 import "lazysizes";
+import { motion } from "framer-motion";
 
 interface HeroSectionProps {
   image: string;
@@ -8,6 +9,10 @@ interface HeroSectionProps {
   children: React.ReactNode;
 }
 
+const fadeInAnimationVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+};
 // This component will be used on every route. All routes follow the same pattern, an image h-screen with some content inside of it.
 const HeroSection = ({ image, placeholder, children }: HeroSectionProps) => {
   return (
@@ -21,10 +26,15 @@ const HeroSection = ({ image, placeholder, children }: HeroSectionProps) => {
           filter: "brightness(0.15)",
         }}
       />
-      <div className="flex h-[90%] flex-row items-center gap-12 self-center md:h-full">
+      <motion.div
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        animate="animate"
+        className="flex h-[90%] flex-row items-center gap-12 self-center md:h-full"
+      >
         <VerticalLine />
         {children}
-      </div>
+      </motion.div>
     </section>
   );
 };
