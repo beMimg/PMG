@@ -46,7 +46,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index,
+      delay: 0.01 * index,
     },
   }),
 };
@@ -62,6 +62,9 @@ const NegocioSAPSection = () => {
             whileInView="animate"
             custom={negocio.index}
             key={negocio.index}
+            viewport={{
+              once: true,
+            }}
             className="blurred-bg relative rounded-lg transition-all duration-200 ease-in-out "
           >
             <div className="flex h-full w-full flex-col gap-2 rounded-lg bg-gray-50 p-4 shadow-lg transition-all hover:scale-95 hover:shadow-none">
