@@ -1,11 +1,11 @@
 import React from "react";
 import SectionMaxW7XL from "../common/SectionMaxW7XL";
-import netWeaverImg from "../../assets/certifications/abap-with-sap-netweaver.png";
-import btpExtensionImg from "../../assets/certifications/sap-btp-extension-developer.png";
-import abapForSapImg from "../../assets/certifications/abap-for-sap-hana-2.0.png";
+import netWeaverImg from "../../assets/certifications/abap-with-sap-netweaver.jpg";
+import btpExtensionImg from "../../assets/certifications/sap-btp-extension-developer.jpg";
+import abapForSapImg from "../../assets/certifications/abap-for-sap-hana-2.0.jpg";
 import sapCloudImg from "../../assets/certifications/sap-cloud-platform.png";
-import sapFioriAppImg from "../../assets/certifications/sap-fiori-app-developer.png";
-import systemAdministrationImg from "../../assets/certifications/sap-s4hana-system-administration.png";
+import sapFioriAppImg from "../../assets/certifications/sap-fiori-app-developer.jpg";
+import systemAdministrationImg from "../../assets/certifications/sap-s4hana-system-administration.jpg";
 
 const Certificaciones = () => {
   const imageStyle =

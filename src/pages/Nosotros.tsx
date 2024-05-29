@@ -4,7 +4,6 @@ import TopSectionOfEveryRoute from "../components/common/HeroSection";
 import PorquePMG from "../components/nosotros/PorquePMG";
 import NuestrosValores from "../components/nosotros/NuestrosValores";
 import Certificaciones from "../components/nosotros/Certificaciones";
-import AreaGeografica from "../components/nosotros/AreaGeografica";
 import meetingImgPlaceholder from "../assets/route-images/nosotros-meeting-placeholder.jpg";
 
 const Nosotros = () => {
@@ -32,7 +31,6 @@ const Nosotros = () => {
         <PorquePMG />
         <NuestrosValores />
         <Certificaciones />
-        <AreaGeografica />
       </div>
     </main>
   );
