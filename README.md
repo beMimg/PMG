@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# PMG Solutions & Development Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This consulting firm specializes in SAP solutions, providing expert services to enhance business processes and efficiency. The website highlights their expertise, services, and commitment to delivering high-quality SAP solutions.
 
-## Available Scripts
+## Live Preview
 
-In the project directory, you can run:
+Experience X Clone in action: [Live Preview](https://pmg-solutions.es)
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Take a glimpse at X Clone's interface:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![mockup-pmg](https://github.com/beMimg/PMG/assets/126000960/49c18c26-41df-44ed-9477-503ae8845d9a)
 
-### `npm test`
+## Navigation Guide
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Home: Introduction to the firm's SAP solutions and key highlights.
+About: Information about the company's mission, vision, team, and history.
+Services: Detailed descriptions of the SAP services offered, including implementation, support, and optimization.
+Contact: Contact form and details for inquiries and support.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following technologies are used to build X Clone:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Frontend**: React, JavaScript, TypeScript, Tailwind CSS, Framer Motion
+- **Deployment**: Hostalia
